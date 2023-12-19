@@ -1,7 +1,7 @@
 {
   "property": [
     {
-      "name": "Number 19 Brighton",
+      "name": "Russell",
       "id": 2119,
       "reception": "manned",
       "description": "This guest house is less than 5 minutes from the Churchill Square shopping center, The Brighton Centre, and the beach. The boutiques of The Lanes and the Brighton Pavilion are within a 15-minute walk, as is Brighton Train Station with direct services to central London and Gatwick Airport.",
@@ -9,7 +9,7 @@
       "starRate": 4.0,
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/Russell/Russell_1.jpg",
-      "images": "assets/images/Alumhurst/SliderPhotos/",
+      "images": "assets/images/Russell/SliderPhotos/",
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
