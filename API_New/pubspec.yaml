@@ -139,11 +139,26 @@ flutter:
     - assets/images/GreenGables/Deluxe-Double_room-Ensuite/
     - assets/images/GreenGables/Triple_room-Deluxe-Ensuite/
     - assets/images/GreenGables/Family room-Deluxe-Ensuite-with_kitchenette/
+    - assets/icons/
+    - assets/images/LG/SliderPhotos/
+    - assets/images/Elmo/SliderPhotos/
+    - assets/images/Avalon/SliderPhotos/
+    - assets/images/Bonair/SliderPhotos/
+    - assets/images/Wembar/SliderPhotos/
+    - assets/images/Crofton/SliderPhotos/
+    - assets/images/Holland/SliderPhotos/
+    - assets/images/Malvern/SliderPhotos/
+    - assets/images/Orlando/SliderPhotos/
+    - assets/images/Russell/SliderPhotos/
+    - assets/images/TorPark/SliderPhotos/
+    - assets/images/Richmond/SliderPhotos/
+    - assets/images/Alumhurst/SliderPhotos/
+    - assets/images/GreenGables/SliderPhotos/
 
 fonts:
-   - family: Kalnia
-     fonts:
-       - asset: fonts/Kalnia-VariableFont_wdth,wght.ttf
+  - family: Kalnia
+    fonts:
+      - asset: fonts/Kalnia-VariableFont_wdth,wght.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

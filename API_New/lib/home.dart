@@ -1,6 +1,6 @@
-import 'package:api_new/model/hotel_detail.dart';
 // import 'package:apireset2/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel.dart';
+import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +16,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _locationController = TextEditingController();
-  final TextEditingController _cityController = TextEditingController();  late List<Hotel> hotels ;
-
+  final TextEditingController _cityController = TextEditingController();
+  late List<Hotel> hotels;
 
   // this override to call data
   @override
@@ -30,12 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('H&H HOTELS',
-        style: TextStyle(
-          color: Colors.white,
-          letterSpacing: 1.7,
-          fontFamily: 'Kalnia',
-        ),),
+        title: const Text(
+          'H&H HOTELS',
+          style: TextStyle(
+            color: Colors.white,
+            letterSpacing: 1.7,
+            fontFamily: 'Kalnia',
+          ),
+        ),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -45,7 +47,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
         backgroundColor: AppTheme.lightPrimaryColor,
-        leading: IconButton(onPressed: () {},
+        leading: IconButton(
+            onPressed: () {},
             color: Colors.white,
             icon: const Icon(Icons.menu)),
         shape: const RoundedRectangleBorder(
@@ -57,17 +60,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-        shape: BoxShape.rectangle,
-            // shape: BoxShadow(
-            //   color =  Color(_kColorDefault),
-            //   offset = Offset.zero,
-            //   spreadRadius = 0.0,
-            //   blurStyle = BlurStyle.normal,),
-            // color: Colors.white,
-            // border: Border(
-            //     top: BorderSide(
-            //         color: AppTheme.lightAccentColor,
-            //         width: 0.5))
+          shape: BoxShape.rectangle,
+          // shape: BoxShadow(
+          //   color =  Color(_kColorDefault),
+          //   offset = Offset.zero,
+          //   spreadRadius = 0.0,
+          //   blurStyle = BlurStyle.normal,),
+          // color: Colors.white,
+          // border: Border(
+          //     top: BorderSide(
+          //         color: AppTheme.lightAccentColor,
+          //         width: 0.5))
         ),
         child: SnakeNavigationBar.color(
           behaviour: SnakeBarBehaviour.floating,
@@ -79,14 +82,15 @@ class _HomeScreenState extends State<HomeScreen> {
           //   color: Colors.white,
           // ),
           // showSelectedLabels: true,
-          selectedLabelStyle:  const TextStyle(
+          selectedLabelStyle: const TextStyle(
             fontSize: 10,
           ),
           unselectedLabelStyle: const TextStyle(
             fontSize: 13,
             color: AppTheme.buiColorCtaBackground,
           ),
-          unselectedItemColor: Theme.of(context).colorScheme.secondary, //Theme.of(context).colorScheme.secondary,
+          unselectedItemColor: Theme.of(context).colorScheme.secondary,
+          //Theme.of(context).colorScheme.secondary,
           showUnselectedLabels: true,
           currentIndex: 0,
           onTap: (val) {},
@@ -114,7 +118,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 16.0), // Add some spacing between text fields
+            const SizedBox(height: 16.0),
+            // Add some spacing between text fields
 
             // Search by city
             TextField(
@@ -138,23 +143,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     final starRate = hotel.starRate;
                     final roomRate = hotel.roomRate;
                     final profilePicture = hotel.profilePicture;
-                    // const String starIcon = 'assets/images/ant-design_star-filled.svg';
-                    // const String redHeartSVG = 'assets/images/red_heart_SVG.svg';
                     SvgPicture svgIcon;
                     return Container(
                       margin: const EdgeInsets.only(top: 10, bottom: 10),
                       width: 370,
                       height: 327,
                       child: Column(
-                          children: [
-                      // Search area
-                            GestureDetector(
-                            onTap: (){
+                        children: [
+                          // Search area
+                          GestureDetector(
+                            onTap: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) =>  HotelDetail(
-                                    hotel: hotel
-                                )),
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        HotelDetail(hotel: hotel)),
                               );
                             },
                             child: Column(
@@ -198,32 +201,40 @@ class _HomeScreenState extends State<HomeScreen> {
                                           decoration: ShapeDecoration(
                                             color: Colors.white,
                                             shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(100),
+                                              borderRadius:
+                                                  BorderRadius.circular(100),
                                             ),
                                           ),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
                                             children: [
                                               SizedBox(
                                                 width: 20,
                                                 height: 20,
                                                 child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   children: [
                                                     Container(
                                                         width: 20,
                                                         height: 20,
-                                                        clipBehavior: Clip.antiAlias,
-                                                        decoration: const BoxDecoration(),
+                                                        clipBehavior:
+                                                            Clip.antiAlias,
+                                                        decoration:
+                                                            const BoxDecoration(),
                                                         child: Stack(children: [
                                                           svgIcon = SvgPicture.asset(
                                                               redHeartSVG,
-                                                              semanticsLabel: 'A yallow star')
+                                                              semanticsLabel:
+                                                                  'A redHear')
                                                         ])),
                                                   ],
                                                 ),
@@ -259,14 +270,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       SizedBox(
                                         width: double.infinity,
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
                                           children: [
                                             Text(
                                               // Hotel name
@@ -282,17 +296,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                             // const SizedBox(width: 50),
                                             Row(
                                               mainAxisSize: MainAxisSize.min,
-                                              mainAxisAlignment: MainAxisAlignment.start,
-                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
                                               children: [
                                                 Container(
                                                   width: 20,
                                                   height: 20,
                                                   clipBehavior: Clip.antiAlias,
-                                                  decoration: const BoxDecoration(),
+                                                  decoration:
+                                                      const BoxDecoration(),
                                                   child: Stack(children: [
-                                                    svgIcon = SvgPicture.asset(starIcon,
-                                                        semanticsLabel: 'A yallow star'),
+                                                    svgIcon = SvgPicture.asset(
+                                                        starIcon,
+                                                        semanticsLabel:
+                                                            'A yallow star'),
                                                   ]),
                                                 ),
                                                 const SizedBox(width: 8),
@@ -301,7 +320,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: const TextStyle(
                                                     color: Color(0xFF0F0F0F),
                                                     fontSize: 12,
-                                                    fontFamily: 'Plus Jakarta Sans',
+                                                    fontFamily:
+                                                        'Plus Jakarta Sans',
                                                     fontWeight: FontWeight.w700,
                                                     height: 0.12,
                                                   ),
@@ -328,7 +348,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ), //location
                                       const SizedBox(height: 8),
                                       Padding(
-                                        padding: const EdgeInsets.only(top: 8, bottom: 8),
+                                        padding: const EdgeInsets.only(
+                                            top: 8, bottom: 8),
                                         child: Container(
                                           margin: const EdgeInsets.only(top: 5),
                                           width: double.infinity,
@@ -340,7 +361,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: const TextStyle(
                                                     color: Color(0xFF4C4DDC),
                                                     fontSize: 14,
-                                                    fontFamily: 'Plus Jakarta Sans',
+                                                    fontFamily:
+                                                        'Plus Jakarta Sans',
                                                     fontWeight: FontWeight.w700,
                                                     height: 0.11,
                                                   ),
@@ -350,7 +372,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: TextStyle(
                                                     color: Color(0xFF878787),
                                                     fontSize: 12,
-                                                    fontFamily: 'Plus Jakarta Sans',
+                                                    fontFamily:
+                                                        'Plus Jakarta Sans',
                                                     fontWeight: FontWeight.w500,
                                                     height: 0.12,
                                                   ),

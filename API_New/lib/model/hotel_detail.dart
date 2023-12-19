@@ -3,164 +3,71 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:api_new/model/hotel.dart';
 
-class HotelDetail extends StatelessWidget {
+class HotelDetail extends StatefulWidget {
   final Hotel hotel;
 
   const HotelDetail({super.key, required this.hotel});
 
   @override
+  State<HotelDetail> createState() => _HotelDetailState();
+}
+
+class _HotelDetailState extends State<HotelDetail> {
+  @override
   Widget build(BuildContext context) {
     SvgPicture svgIcon;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Detail'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              // Implement menu functionality
-            },
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              width: 327,
-              height: 246,
-              clipBehavior: Clip.antiAlias,
-              decoration: ShapeDecoration(
-                color: Colors.white,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-              ),
-              child: Stack(
-                children: [
-                  Expanded(
-                    child: Container(
-                      width: 487,
-                      height: 310,
-                      decoration:  BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(hotel.profilePicture),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ), //Profile Picture
-                  ),
-                  Positioned( // Like RedHeart
-                    right: 12,
-                    top: 12,
-                    child: Container(
-                      width: 32,
-                      height: 32,
-                      padding: const EdgeInsets.all(6),
-                      clipBehavior: Clip.antiAlias,
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            width: 20,
-                            height: 20,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: 20,
-                                  height: 20,
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                    CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                          width: 20,
-                                          height: 20,
-                                          clipBehavior: Clip.antiAlias,
-                                          decoration:  const BoxDecoration(),
-                                          child: Stack(
-                                              children: [
-                                                svgIcon = SvgPicture.asset(
-                                                redHeartSVG,
-                                                semanticsLabel: 'A yallow star')
-                                          ])),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ), //heart
-                ],
-              ),
-            ),// ... Implement your hotel pictures slider
-
-            // Row with amenities
-            Row(
-              // mainAxisAlignment : MainAxisAlignment.start,
-              mainAxisSize : MainAxisSize.max,
-              crossAxisAlignment : CrossAxisAlignment.center,
-              children: [
-                const Icon(Icons.wifi),
-                const Text('Free Wifi'),
-                const Icon(Icons.free_breakfast),
-                const Text('Free Breakfast'),
-                const Icon(Icons.star),
-                Text('Reviews: ${hotel.starRate}'), // Assuming starRate is the review value
-              ],
-            ), // Aminties
-
-            // Hotel details
-            // ... Implement your hotel details UI here
-
-            // Button to book
-            ElevatedButton(
+        appBar: AppBar(
+          title: const Text('Detail'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.menu),
               onPressed: () {
-                // Implement booking functionality
+                // Implement menu functionality
               },
-              child: const Text('Book Now'),
             ),
           ],
         ),
-      ),
-    );
+        body: Column(children: [
+          Container(
+            width: 400,
+            height: 246,
+            margin: const EdgeInsets.all(10),
+            clipBehavior: Clip.antiAlias,
+            decoration: ShapeDecoration(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8)),
+            ),
+            child: PageView.builder(
+                itemCount: widget.hotel.images.length,
+                // Assuming pictures is a list of image paths
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(widget.hotel.images[index]),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  );
+                }),
+          ),
+          // Aminties
+
+          // Hotel details
+          // ... Implement your hotel details UI here
+
+          // Button to book
+          ElevatedButton(
+            onPressed: () {
+              // Implement booking functionality
+            },
+            child: const Text('Book Now'),
+          ),
+        ]));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //
 // Container(
