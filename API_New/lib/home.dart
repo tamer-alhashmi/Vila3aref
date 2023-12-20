@@ -17,7 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _locationController = TextEditingController();
   final TextEditingController _cityController = TextEditingController();
-  late List<Hotel> hotels;
+  late List<Hotel> hotels= [];
 
   // this override to call data
   @override
@@ -110,30 +110,35 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             // Search by location
-            TextField(
-              controller: _locationController,
-              decoration: const InputDecoration(
-                labelText: 'Search by location',
-                prefixIcon: Icon(Icons.location_on),
-                border: OutlineInputBorder(),
+            Container(
+              child: TextField(
+                controller: _locationController,
+                decoration: const InputDecoration(
+                  labelText: 'Search by location',
+                  prefixIcon: Icon(Icons.location_on),
+                  border: OutlineInputBorder(),
+                ),
               ),
             ),
             const SizedBox(height: 16.0),
             // Add some spacing between text fields
 
             // Search by city
-            TextField(
-              controller: _cityController,
-              decoration: const InputDecoration(
-                labelText: 'Search by city',
-                prefixIcon: Icon(Icons.location_city),
-                border: OutlineInputBorder(),
+            Container(
+              child: TextField(
+                controller: _cityController,
+                decoration: const InputDecoration(
+                  labelText: 'Search by city',
+                  prefixIcon: Icon(Icons.location_city),
+                  border: OutlineInputBorder(),
+                ),
               ),
             ),
             Expanded(
               child: ListView.builder(
                   itemCount: hotels.length,
                   itemBuilder: (context, index) {
+                  print('Building hotel item $index');
                     final hotel = hotels[index];
                     var name = hotel.name;
                     final id = hotel.id;

@@ -2,7 +2,7 @@
 // import 'package:apireset2/model/hotel_likeDislike.dart';
 
 
-
+ var hotel = Hotel;
 class Hotel {
   final String name;
   final String reception;
@@ -12,8 +12,7 @@ class Hotel {
   final String starRate;
   final int id;
   final String profilePicture;
-  final String images;
-
+  final List<String> images;
   // final LikeDisLike likeDislike;
   // final String categories;
   // final String amenities;
@@ -36,8 +35,8 @@ class Hotel {
 
 
 
-const String starIcon = 'assets/images/ant-design_star-filled.svg';
-const String redHeartSVG = 'assets/images/red_heart_SVG.svg';
+const String starIcon = 'assets/icons/ant-design_star-filled.svg';
+const String redHeartSVG = 'assets/icons/red_heart_SVG.svg';
 const String wifiSvg = 'assets/icons/wifi.svg';
 const String arrowSvg = 'assets/icons/Arrow-Left2.svg';
 const String blueHeartSvg = 'assets/icons/Blue_heart_SVG.svg';

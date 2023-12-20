@@ -13,7 +13,7 @@ class HotelsApi {
       print('fetchHotel Called');
     }
     const url =
-        'https://raw.githubusercontent.com/tamer-alhashmi/ResetApi/main/json/properties.json';
+        'https://raw.githubusercontent.com/tamer-alhashmi/Vila3aref/master/API_New/json_files/properties.json';
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     final body = response.body;
@@ -48,7 +48,8 @@ class HotelsApi {
         roomRate: e['roomRate'].toString(),
         id: e['id'],
         profilePicture: e['profilePicture'],
-        images: e['images'],
+        // images: List<String>.from(e['images']), 
+        images: List<String>.from((e['images'] as String).split(',')), // Convert to List<String>
         // likeDislike: e['likeDislike'],
         // categories: e['categories'],
         // amenities: e['categories'][CategoryAmenities] ,
