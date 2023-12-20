@@ -9,7 +9,16 @@
       "starRate": 4.0,
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/Russell/Russell_1.jpg",
-      "images": "assets/images/Russell/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -176,7 +185,16 @@
       "starRate": 3.0,
       "roomRate": "$ 52.00",
       "profilePicture": "assets/images/Malvern/Malvern1.jpg",
-      "images": "assets/images/Malvern/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -343,7 +361,16 @@
       "starRate": 4.0,
       "roomRate": "$ 64.00",
       "profilePicture": "assets/images/Avalon/Avalon1.jpeg",
-      "images": "assets/images/Avalon/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -510,7 +537,16 @@
       "starRate": 4.0,
       "roomRate": "$ 47.00",
       "profilePicture": "assets/images/Russell/Russell_1.jpg",
-      "images": "assets/images/Russell/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -677,7 +713,16 @@
       "starRate": 3.0,
       "roomRate": "$ 48.00",
       "profilePicture": "assets/images/TorPark/TorPark1.jpeg",
-      "images": "assets/images/TorPark/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -844,7 +889,16 @@
       "starRate": 4.0,
       "roomRate": "$ 49.00",
       "profilePicture": "assets/images/Richmond/Richmond1.jpg",
-      "images": "assets/images/Richmond/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1011,7 +1065,16 @@
       "starRate": 3.0,
       "roomRate": "$ 39.00",
       "profilePicture": "assets/images/Elmo/Elmo1.jpg",
-      "images": "assets/images/Elmo/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1178,7 +1241,16 @@
       "starRate": 4.0,
       "roomRate": "$ 36.00",
       "profilePicture": "assets/images/Orlando/Orlando1.jpg",
-      "images": "assets/images/Orlando/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1345,7 +1417,16 @@
       "starRate": 3.0,
       "roomRate": "$ 40.50",
       "profilePicture": "assets/images/Holland/Holland1.jpg",
-      "images": "assets/images/Holland/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1512,7 +1593,16 @@
       "starRate": 5.0,
       "roomRate": "$ 51.00",
       "profilePicture": "assets/images/GreenGables/GreenGables1.jpg",
-      "images": "assets/images/GreenGables/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1679,7 +1769,16 @@
       "starRate": 4.0,
       "roomRate": "$ 47.50",
       "profilePicture": "assets/images/Crofton/Crofton1.jpg",
-      "images": "assets/images/Crofton/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -1846,7 +1945,16 @@
       "starRate": 3.0,
       "roomRate": "$ 39.50",
       "profilePicture": "assets/images/Bonair/Bonair1.png",
-      "images": "assets/images/Bonair/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
@@ -2013,7 +2121,16 @@
       "starRate": 4.0,
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/Alumhurst/Alumhurst1.png",
-      "images": "assets/images/Alumhurst/SliderPhotos/",
+      "images": [
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
+        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+      ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
           "catname": "Deluxe-Double room-Ensuite",
