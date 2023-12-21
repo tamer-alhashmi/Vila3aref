@@ -17,7 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _locationController = TextEditingController();
   final TextEditingController _cityController = TextEditingController();
-  late List<Hotel> hotels= [];
+  late List<Hotel> hotels = [];
 
   // this override to call data
   @override
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView.builder(
                   itemCount: hotels.length,
                   itemBuilder: (context, index) {
-                  print('Building hotel item $index');
+                    print('Building hotel item $index');
                     final hotel = hotels[index];
                     var name = hotel.name;
                     final id = hotel.id;
@@ -236,10 +236,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         decoration:
                                                             const BoxDecoration(),
                                                         child: Stack(children: [
-                                                          svgIcon = SvgPicture.asset(
-                                                              redHeartSVG,
-                                                              semanticsLabel:
-                                                                  'A redHear')
+                                                          svgIcon =
+                                                              SvgPicture.asset(
+                                                                  redHeartSVG,
+                                                                  semanticsLabel:
+                                                                      'A redHear')
                                                         ])),
                                                   ],
                                                 ),

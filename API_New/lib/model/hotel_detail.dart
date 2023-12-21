@@ -51,6 +51,7 @@ class _HotelDetailState extends State<HotelDetail> {
                       borderRadius: BorderRadius.circular(8.0),
                       image: DecorationImage(
                         image: AssetImage(
+
                           'assets/images/${widget.hotel.name}/SliderPhotos/${widget.hotel.images[index % widget.hotel.images.length]}',
                         ),
                         fit: BoxFit.cover,

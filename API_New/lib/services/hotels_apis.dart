@@ -49,7 +49,7 @@ class HotelsApi {
         id: e['id'],
         profilePicture: e['profilePicture'],
         // images: List<String>.from(e['images']), 
-        images: List<String>.from((e['images'] as String).split(',')), // Convert to List<String>
+        images: List<String>.from((e['images']), // Convert to List<String>
         // likeDislike: e['likeDislike'],
         // categories: e['categories'],
         // amenities: e['categories'][CategoryAmenities] ,
