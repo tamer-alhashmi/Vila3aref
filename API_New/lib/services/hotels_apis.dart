@@ -1,11 +1,12 @@
 import 'dart:convert';
 // import '../model/hotel_categories.dart';
 // import 'package:apireset2/model/hotel_likeDislike.dart';
+import 'package:api_new/model/hotel_categories.dart';
+import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 import '../model/hotel.dart';
-
 
 class HotelsApi {
   static Future<List<Hotel>> fetchHotel() async {
@@ -37,19 +38,22 @@ class HotelsApi {
       // final likeDislike = LikeDisLike(
       // likes: e['likeDislike']['likes'],
       // dislikes: e['likeDislike']['dislikes'],
-      // userAction: e['likeDislike']['userAction'],
+      // userAction: e['likeDislike']['userAction']);
 
       return Hotel(
         name: e['name'],
-        reception: e['reception'],
+        // reception: e['reception'],
         description: e['description'],
         location: e['location'],
-        starRate: e['starRate'].toString(),
+        starRate: e['starRate'],
         roomRate: e['roomRate'].toString(),
         id: e['id'],
         profilePicture: e['profilePicture'],
-        // images: List<String>.from(e['images']), 
-        images: List<String>.from((e['images']), // Convert to List<String>
+        // images: List<String>.from(e['images']),
+        images: List<String>.from(e['images']),
+        // categories: e['categories'],
+        // likeDislike: e['likeDislike'], // Convert to List<String>
+
         // likeDislike: e['likeDislike'],
         // categories: e['categories'],
         // amenities: e['categories'][CategoryAmenities] ,

@@ -9,14 +9,14 @@
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/Russell/Russell_1.jpg",
       "images": [
-        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Russell/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Russell/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Russell/SliderPhotos/Russell_1.jpg",
-        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Russell/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Russell_1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -184,14 +184,14 @@
       "roomRate": "$ 52.00",
       "profilePicture": "assets/images/Malvern/Malvern1.jpg",
       "images": [
-        "assets/images/Malvern/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Malvern/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Malvern/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Malvern/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Malvern/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Malvern/SliderPhotos/Malvern1.jpg",
-        "assets/images/Malvern/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Malvern/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Malvern1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -359,13 +359,13 @@
       "roomRate": "$ 64.00",
       "profilePicture": "assets/images/Avalon/Avalon1.jpeg",
       "images": [
-        "assets/images/Avalon/SliderPhotos/Avalon1.jpeg",
-        "assets/images/Avalon/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Avalon/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Avalon/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Avalon/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
-        "assets/images/Avalon/SliderPhotos/Triple_room-Deluxe-Ensuite1.jpeg",
-        "assets/images/Avalon/SliderPhotos/Triple_room-Deluxe-Ensuite6.jpg"
+        "Avalon1.jpeg",
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
+        "Triple_room-Deluxe-Ensuite1.jpeg",
+        "Triple_room-Deluxe-Ensuite6.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -533,14 +533,14 @@
       "roomRate": "$ 47.00",
       "profilePicture": "assets/images/Wembar/Wembar1.png",
       "images": [
-        "assets/images/Wembar/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Wembar/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Wembar/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Wembar/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Wembar/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Wembar/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Wembar/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg",
-        "assets/images/Wembar/SliderPhotos/Wember1.png"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg",
+        "Wember1.png"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -708,14 +708,14 @@
       "roomRate": "$ 48.00",
       "profilePicture": "assets/images/TorPark/TorPark1.jpeg",
       "images": [
-        "assets/images/TorPark/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/TorPark/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/TorPark/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/TorPark/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/TorPark/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/TorPark/SliderPhotos/TorPark1.jpeg",
-        "assets/images/TorPark/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/TorPark/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "TorPark1.jpeg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -883,14 +883,14 @@
       "roomRate": "$ 49.00",
       "profilePicture": "assets/images/Richmond/Richmond1.jpg",
       "images": [
-        "assets/images/Richmond/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Richmond/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Richmond/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Richmond/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Richmond/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Richmond/SliderPhotos/Richmond1.jpg",
-        "assets/images/Richmond/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Richmond/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Richmond1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1058,14 +1058,14 @@
       "roomRate": "$ 39.00",
       "profilePicture": "assets/images/Elmo/Elmo1.jpg",
       "images": [
-        "assets/images/Elmo/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Elmo/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Elmo/SliderPhotos/Elmo1.jpg",
-        "assets/images/Elmo/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Elmo/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Elmo/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Elmo/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Elmo/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Elmo1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1233,14 +1233,14 @@
       "roomRate": "$ 36.00",
       "profilePicture": "assets/images/Orlando/Orlando1.jpg",
       "images": [
-        "assets/images/Orlando/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Orlando/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Orlando/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Orlando/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Orlando/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Orlando/SliderPhotos/Orlando1.jpg",
-        "assets/images/Orlando/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Orlando/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Orlando1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1408,14 +1408,14 @@
       "roomRate": "$ 40.50",
       "profilePicture": "assets/images/Holland/Holland1.jpg",
       "images": [
-        "assets/images/Holland/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Holland/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Holland/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Holland/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Holland/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/Holland/SliderPhotos/Holland1.jpg",
-        "assets/images/Holland/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Holland/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "Holland1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1583,14 +1583,14 @@
       "roomRate": "$ 51.00",
       "profilePicture": "assets/images/GreenGables/GreenGables1.jpg",
       "images": [
-        "assets/images/GreenGables/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/GreenGables/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/GreenGables/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/GreenGables/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/GreenGables/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/GreenGables/SliderPhotos/GreenGables1.jpg",
-        "assets/images/GreenGables/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/GreenGables/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "GreenGables1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1758,13 +1758,13 @@
       "roomRate": "$ 47.50",
       "profilePicture": "assets/images/Crofton/Crofton1.jpg",
       "images": [
-        "assets/images/Crofton/SliderPhotos/Crofton1.jpg",
-        "assets/images/Crofton/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Crofton/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Crofton/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Crofton/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/Crofton/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg",
-        "assets/images/Crofton/SliderPhotos/Triple_room-Deluxe-Ensuite6.jpg"
+        "Crofton1.jpg",
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg",
+        "Triple_room-Deluxe-Ensuite6.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -1932,13 +1932,13 @@
       "roomRate": "$ 39.50",
       "profilePicture": "assets/images/Bonair/Bonair1.png",
       "images": [
-        "assets/images/Bonair/SliderPhotos/Bonair1.png",
-        "assets/images/Bonair/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Bonair/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Bonair/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
-        "assets/images/Bonair/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette7.jpeg",
-        "assets/images/Bonair/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/Bonair/SliderPhotos/Triple_room-Deluxe-Ensuite6.jpg"
+        "Bonair1.png",
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette7.jpeg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite6.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -2106,13 +2106,13 @@
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/Alumhurst/Alumhurst1.png",
       "images": [
-        "assets/images/Alumhurst/SliderPhotos/Alumhurst1.png",
-        "assets/images/Alumhurst/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/Alumhurst/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/Alumhurst/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/Alumhurst/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
-        "assets/images/Alumhurst/SliderPhotos/Triple_room-Deluxe-Ensuite1.jpeg",
-        "assets/images/Alumhurst/SliderPhotos/Triple_room-Deluxe-Ensuite8.jpeg"
+        "Alumhurst1.png",
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg",
+        "Triple_room-Deluxe-Ensuite1.jpeg",
+        "Triple_room-Deluxe-Ensuite8.jpeg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {
@@ -2280,14 +2280,14 @@
       "roomRate": "$ 45.00",
       "profilePicture": "assets/images/LG/LG1.jpg",
       "images": [
-        "assets/images/LG/SliderPhotos/Deluxe_Double_room_Ensuite4.jpg",
-        "assets/images/LG/SliderPhotos/Deluxe_Double_room_Ensuite5.jpg",
-        "assets/images/LG/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
-        "assets/images/LG/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
-        "assets/images/LG/SliderPhotos/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
-        "assets/images/LG/SliderPhotos/LG1.jpg",
-        "assets/images/LG/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg",
-        "assets/images/LG/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg"
+        "Deluxe_Double_room_Ensuite4.jpg",
+        "Deluxe_Double_room_Ensuite5.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette1.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette4.jpg",
+        "Family_room-Deluxe-Ensuite-with_kitchenette5.jpg",
+        "LG1.jpg",
+        "Triple_room-Deluxe-Ensuite4.jpg",
+        "Triple_room-Deluxe-Ensuite5.jpg"
       ],
       "categories": {
         "Deluxe-Double room-Ensuite": {

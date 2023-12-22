@@ -40,6 +40,8 @@ dependencies:
   flutter_snake_navigationbar: ^0.6.1
   get: ^4.6.6
   flutter_svg: ^2.0.9
+  shimmer: ^3.0.0
+  carousel_slider: ^4.2.1
 #  html: ^0.15.4
 
 dev_dependencies:
@@ -134,7 +136,6 @@ flutter:
     - assets/images/Alumhurst/
     - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/
     - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/
-    - assets/images/Alumhurst/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/GreenGables/
     - assets/images/GreenGables/Deluxe-Double_room-Ensuite/
     - assets/images/GreenGables/Triple_room-Deluxe-Ensuite/
@@ -262,6 +263,40 @@ flutter:
     - assets/images/Wembar/SliderPhotos/Triple_room-Deluxe-Ensuite4.jpg
     - assets/images/Wembar/SliderPhotos/Triple_room-Deluxe-Ensuite5.jpg
     - assets/images/Wembar/SliderPhotos/Wember1.png
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite1.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite2.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite3.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite4.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite5.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite6.jpg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite7.jpeg
+    - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/Deluxe_Double_room_Ensuite8.jpeg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette1.jpg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette2.jpg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette3.jpg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette4.jpg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette5.jpg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette6.jpeg
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/Family_room-Deluxe-Ensuite-with_kitchenette7.jpeg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite1.jpeg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite2.jpg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite3.jpg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite4.jpg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite5.jpg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite6.jpg
+    - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/Triple_room-Deluxe-Ensuite8.jpeg
+    - assets/icons/ant-design_star-filled.svg
+    - assets/icons/Arrow-Left2.svg
+    - assets/icons/Blue_heart_SVG.svg
+    - assets/icons/coffee.svg
+    - assets/icons/location.svg
+    - assets/icons/more.svg
+    - assets/icons/red_heart.png
+    - assets/icons/red_heart_SVG.svg
+    - assets/icons/wifi.svg
+    - assets/images/Alumhurst/Alumhurst1.png
+    - assets/images/LG/LG1.jpg
+    - assets/images/Wembar/Wember1.png
 
 fonts:
   - family: Kalnia

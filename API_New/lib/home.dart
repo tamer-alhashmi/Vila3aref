@@ -1,6 +1,7 @@
 // import 'package:apireset2/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel.dart';
 import 'package:api_new/model/hotel_detail.dart';
+import 'package:api_new/model/icons.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -110,14 +111,12 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             // Search by location
-            Container(
-              child: TextField(
-                controller: _locationController,
-                decoration: const InputDecoration(
-                  labelText: 'Search by location',
-                  prefixIcon: Icon(Icons.location_on),
-                  border: OutlineInputBorder(),
-                ),
+            TextField(
+              controller: _locationController,
+              decoration: const InputDecoration(
+                labelText: 'Search by location',
+                prefixIcon: Icon(Icons.location_on),
+                border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 16.0),
@@ -141,14 +140,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     print('Building hotel item $index');
                     final hotel = hotels[index];
                     var name = hotel.name;
-                    final id = hotel.id;
+                    // final id = hotel.id;
                     final description = hotel.description;
-                    final reception = hotel.reception;
+                    // final reception = hotel.reception;
                     final location = hotel.location;
-                    final starRate = hotel.starRate;
                     final roomRate = hotel.roomRate;
+                    final starRate = hotel.starRate;
                     final profilePicture = hotel.profilePicture;
-                    SvgPicture svgIcon;
+                    final redHeartPathIcon = getRedHeartSVGPath();
+                    final starRateIcon = getStarRateSVGPath();
+                    final arrowIcon = getArrowSVGPath();
+                    final blueHearIcon = getBlueHeartSVGPath();
+                    final coffeeIcon = getCoffeeSVGPath();
+                    final locationIcon = getLocationSVGPath();
+                    final moreIcon = getMoreSVGPath();
+                    final wifiIcon = getWifiSVGPath();
                     return Container(
                       margin: const EdgeInsets.only(top: 10, bottom: 10),
                       width: 370,
@@ -236,11 +242,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                         decoration:
                                                             const BoxDecoration(),
                                                         child: Stack(children: [
-                                                          svgIcon =
-                                                              SvgPicture.asset(
-                                                                  redHeartSVG,
-                                                                  semanticsLabel:
-                                                                      'A redHear')
+                                                          SvgPicture.asset(
+                                                              redHeartPathIcon,
+                                                              semanticsLabel:
+                                                                  'A redHear')
                                                         ])),
                                                   ],
                                                 ),
@@ -314,20 +319,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   decoration:
                                                       const BoxDecoration(),
                                                   child: Stack(children: [
-                                                    svgIcon = SvgPicture.asset(
-                                                        starIcon,
+                                                    SvgPicture.asset(
+                                                        starRateIcon,
                                                         semanticsLabel:
-                                                            'A yallow star'),
+                                                            'Star Rate')
                                                   ]),
                                                 ),
                                                 const SizedBox(width: 8),
-                                                Text(
-                                                  starRate,
+                                                 Text(
+                                                   starRate.toString(),
                                                   style: const TextStyle(
                                                     color: Color(0xFF0F0F0F),
                                                     fontSize: 12,
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
                                                     fontWeight: FontWeight.w700,
                                                     height: 0.12,
                                                   ),
@@ -367,8 +370,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: const TextStyle(
                                                     color: Color(0xFF4C4DDC),
                                                     fontSize: 14,
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
                                                     fontWeight: FontWeight.w700,
                                                     height: 0.11,
                                                   ),
