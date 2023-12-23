@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:api_new/model/hotel.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +13,40 @@ class HotelDetail extends StatefulWidget {
 }
 
 class _HotelDetailState extends State<HotelDetail> {
+  late PageController _pageController;
+  late Timer _timer;
+  int _currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(
+      initialPage: 0,
+      viewportFraction: 0.85,
+    );
+
+    // Set up an auto-play timer
+    _timer = Timer.periodic(const Duration(seconds: 3), (Timer timer) {
+      if (_currentPage < widget.hotel.images.length - 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+      _pageController.animateToPage(
+        _currentPage,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
+    });
+  }
+  @override
+  void dispose() {
+    // Dispose of the controller and timer to avoid memory leaks
+    _pageController.dispose();
+    _timer.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,13 +55,10 @@ class _HotelDetailState extends State<HotelDetail> {
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 200,
               child: PageView.builder(
                 itemCount: widget.hotel.images.length,
-                controller: PageController(
-                  initialPage: 0,
-                  viewportFraction: 0.85,
-                ),
+                controller: _pageController,
                 itemBuilder: (context, index) {
                   print("Images length : ${widget.hotel.images.length}");
                   return Container(
