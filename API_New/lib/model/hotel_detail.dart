@@ -26,7 +26,6 @@ class _HotelDetailState extends State<HotelDetail> {
                   initialPage: 0,
                   viewportFraction: 0.85,
                 ),
-
                 itemBuilder: (context, index) {
                   print("Images length : ${widget.hotel.images.length}");
                   return Container(
