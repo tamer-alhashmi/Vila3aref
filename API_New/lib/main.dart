@@ -19,6 +19,6 @@ class ApiNew extends StatelessWidget {
         debugShowCheckedModeBanner: false, // Set this to false
         theme: AppTheme.lightTheme,
         themeMode: ThemeMode.light,
-        home: const HomeScreen());
+        home:  HomeScreen());
   }
 }

@@ -2,6 +2,7 @@
 import 'package:api_new/model/hotel.dart';
 import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/model/icons.dart';
+import 'package:api_new/model/to_top_btn.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,9 @@ import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final ScrollController scrollController = ScrollController();
+
+   HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -20,6 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _cityController = TextEditingController();
   late List<Hotel> hotels = [];
 
+  get scrollController => CustomFloatingActionButton;
+
   // this override to call data
   @override
   void initState() {
@@ -29,6 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    ScrollController scrollController = ScrollController();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -135,6 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Expanded(
               child: ListView.builder(
+                  controller: scrollController,
                   itemCount: hotels.length,
                   itemBuilder: (context, index) {
                     print('Building hotel item $index');
@@ -405,16 +413,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
 
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: fetchHotel,
-      //   backgroundColor: Colors.teal, // Set the background color
-      //   foregroundColor: Colors.white, // Set the icon color
-      //   elevation: 5.0,
-      //   child: const Icon(Icons.arrow_forward,
-      //     size: 30.0,
-      //       semanticLabel: 'FetchUser',
-      //   ), // Set the shadow elevation
-      //   ),
+      floatingActionButton: CustomFloatingActionButton(
+        scrollController: scrollController,
+      ),
+
     );
   }
 
