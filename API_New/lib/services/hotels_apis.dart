@@ -43,6 +43,7 @@ class HotelsApi {
       return Hotel(
         name: e['name'],
         // reception: e['reception'],
+        discount:e['discount'],
         description: e['description'],
         location: e['location'],
         starRate: e['starRate'],

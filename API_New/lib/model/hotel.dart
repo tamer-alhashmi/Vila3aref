@@ -5,6 +5,8 @@
 // import 'package:meta/meta.dart';
 import 'dart:convert';
 
+import 'package:api_new/model/icons.dart';
+
 Properties propertiesFromJson(String str) =>
     Properties.fromJson(json.decode(str));
 
@@ -37,6 +39,7 @@ class Hotel {
   final String name;
   final int id;
   // final Reception reception;
+  final int discount;
   final String description;
   final String location;
   final String starRate;
@@ -50,6 +53,7 @@ class Hotel {
     required this.name,
     required this.id,
     // required this.reception,
+    required this.discount,
     required this.description,
     required this.location,
     required this.starRate,
@@ -59,11 +63,11 @@ class Hotel {
     // required this.categories,
     // required this.likeDislike,
   });
-
   Hotel copyWith({
     String? name,
     int? id,
     // Reception? reception,
+    int? discount,
     String? description,
     String? location,
     String? starRate,
@@ -77,6 +81,7 @@ class Hotel {
         name: name ?? this.name,
         id: id ?? this.id,
         // reception: reception ?? this.reception,
+        discount: discount ?? this.discount,
         description: description ?? this.description,
         location: location ?? this.location,
         starRate: starRate ?? this.starRate,
@@ -91,7 +96,8 @@ class Hotel {
         name: json["name"],
         id: json["id"],
     // reception: receptionValues.map[json["reception"]],
-        description: json["description"],
+    discount: json["discount"],
+    description: json["description"],
         location: json["location"],
         starRate: json["starRate"],
         roomRate: json["roomRate"],
@@ -106,6 +112,7 @@ class Hotel {
         "name": name,
         "id": id,
         // "reception": receptionValues.reverse[reception],
+        "discount": discount,
         "description": description,
         "location": location,
         "starRate": starRate,
@@ -360,6 +367,18 @@ class EnumValues<T> {
     return reverseMap;
   }
 }
+
+class HotelIcons {
+  String get redHeartIcon => getRedHeartSVGPath();
+  String get starRateIcon => getStarRateSVGPath();
+  String get arrowIcon => getArrowSVGPath();
+  String get blueHeartIcon => getBlueHeartSVGPath();
+  String get coffeeIcon => getCoffeeSVGPath();
+  String get locationIcon => getLocationSVGPath();
+  String get moreIcon => getMoreSVGPath();
+  String get wifiIcon => getWifiSVGPath();
+}
+
 
 // import 'package:apireset2/model/hotel_categories.dart';
 // import 'package:apireset2/model/hotel_likeDislike.dart';

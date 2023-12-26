@@ -1,12 +1,12 @@
 // import 'package:apireset2/model/hotel_likeDislike.dart';
+import 'package:api_new/model/bottom_navigate_bar.dart';
 import 'package:api_new/model/hotel.dart';
 import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/model/icons.dart';
-import 'package:api_new/model/to_top_btn.dart';
+import 'package:api_new/model/scrollup.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -66,52 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
         )),
       ),
 
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          shape: BoxShape.rectangle,
-          // shape: BoxShadow(
-          //   color =  Color(_kColorDefault),
-          //   offset = Offset.zero,
-          //   spreadRadius = 0.0,
-          //   blurStyle = BlurStyle.normal,),
-          // color: Colors.white,
-          // border: Border(
-          //     top: BorderSide(
-          //         color: AppTheme.lightAccentColor,
-          //         width: 0.5))
-        ),
-        child: SnakeNavigationBar.color(
-          behaviour: SnakeBarBehaviour.floating,
-          snakeShape: SnakeShape.circle,
-          snakeViewColor: Theme.of(context).primaryColor,
-          padding: const EdgeInsets.symmetric(vertical: 5),
-          // selectedItemColor: Colors.white,
-          // selectedLabelStyle: const TextStyle(
-          //   color: Colors.white,
-          // ),
-          // showSelectedLabels: true,
-          selectedLabelStyle: const TextStyle(
-            fontSize: 10,
-          ),
-          unselectedLabelStyle: const TextStyle(
-            fontSize: 13,
-            color: AppTheme.buiColorCtaBackground,
-          ),
-          unselectedItemColor: Theme.of(context).colorScheme.secondary,
-          //Theme.of(context).colorScheme.secondary,
-          showUnselectedLabels: true,
-          currentIndex: 0,
-          onTap: (val) {},
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.category), label: 'Category'),
-            BottomNavigationBarItem(icon: Icon(Icons.menu), label: 'Menu'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.account_circle), label: 'Account'),
-          ],
-        ),
-      ), //bottom Navigation Bar
+      bottomNavigationBar: const CustomBottomBar(bottomAppBar: BottomAppBar()), //bottom Navigation Bar
       body: Padding(
         // Search area
         padding: const EdgeInsets.all(16.0),
@@ -146,9 +101,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: hotels.length,
                   itemBuilder: (context, index) {
                     print('Building hotel item $index');
-                    final hotel = hotels[index];
+                   final hotel = hotels[index];
                     var name = hotel.name;
-                    // final id = hotel.id;
+                    final id = hotel.id;
                     final description = hotel.description;
                     // final reception = hotel.reception;
                     final location = hotel.location;
@@ -289,8 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       SizedBox(
                                         width: double.infinity,
