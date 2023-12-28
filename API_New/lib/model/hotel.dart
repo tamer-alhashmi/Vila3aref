@@ -4,7 +4,7 @@
 
 // import 'package:meta/meta.dart';
 import 'dart:convert';
-
+import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/icons.dart';
 
 Properties propertiesFromJson(String str) =>
@@ -34,7 +34,6 @@ class Properties {
         "hotels": List<dynamic>.from(hotels.map((x) => x.toJson())),
       };
 }
-
 class Hotel {
   final String name;
   final int id;
@@ -43,12 +42,11 @@ class Hotel {
   final String description;
   final String location;
   final String starRate;
-  final String roomRate;
+  final int roomRate;
   final String profilePicture;
   final List<String> images;
   // final Categories categories;
   // final LikeDislike likeDislike;
-
   Hotel({
     required this.name,
     required this.id,
@@ -63,6 +61,7 @@ class Hotel {
     // required this.categories,
     // required this.likeDislike,
   });
+
   Hotel copyWith({
     String? name,
     int? id,
@@ -71,7 +70,7 @@ class Hotel {
     String? description,
     String? location,
     String? starRate,
-    String? roomRate,
+    int? roomRate,
     String? profilePicture,
     List<String>? images,
     // Categories? categories,
@@ -379,49 +378,3 @@ class HotelIcons {
   String get wifiIcon => getWifiSVGPath();
 }
 
-
-// import 'package:apireset2/model/hotel_categories.dart';
-// import 'package:apireset2/model/hotel_likeDislike.dart';
-
-//
-//  var hotel = Hotel;
-// class Hotel {
-//   final String name;
-//   final String reception;
-//   final String description;
-//   final String location;
-//   final String roomRate;
-//   final String starRate;
-//   final int id;
-//   final String profilePicture;
-//   final List<String> images;
-//   // final LikeDisLike likeDislike;
-//   // final String categories;
-//   // final String amenities;
-//
-//   Hotel({
-//     required this.name,
-//     required this.reception,
-//     required this.description,
-//     required this.location,
-//     required this.starRate,
-//     required this.roomRate,
-//     required this.id,
-//     required this.profilePicture,
-//     required this.images,
-//     // required this.categories,
-//     // required this.likeDislike,
-//     // required this.amenities,
-//   });
-// }
-//
-//
-//
-// const String starIcon = 'assets/icons/ant-design_star-filled.svg';
-// const String redHeartSVG = 'assets/icons/red_heart_SVG.svg';
-// const String wifiSvg = 'assets/icons/wifi.svg';
-// const String arrowSvg = 'assets/icons/Arrow-Left2.svg';
-// const String blueHeartSvg = 'assets/icons/Blue_heart_SVG.svg';
-// const String coffeeSvg = 'assets/icons/coffee.svg';
-// const String locationSvg = 'assets/icons/location.svg';
-// const String moreSvg = 'assets/icons/more.svg';

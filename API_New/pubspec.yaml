@@ -94,58 +94,45 @@ flutter:
     - assets/images/LG/
     - assets/images/LG/Deluxe-Double_room-Ensuite/
     - assets/images/LG/Triple_room-Deluxe-Ensuite/
-    - assets/images/LG/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Elmo/
     - assets/images/Elmo/Deluxe-Double_room-Ensuite/
     - assets/images/Elmo/Triple_room-Deluxe-Ensuite/
-    - assets/images/Elmo/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Avalon/
     - assets/images/Avalon/Deluxe-Double_room-Ensuite/
     - assets/images/Avalon/Triple_room-Deluxe-Ensuite/
-    - assets/images/Avalon/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Bonair/
     - assets/images/Bonair/Deluxe-Double_room-Ensuite/
     - assets/images/Bonair/Triple_room-Deluxe-Ensuite/
-    - assets/images/Bonair/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Wembar/
     - assets/images/Wembar/Deluxe-Double_room-Ensuite/
     - assets/images/Wembar/Triple_room-Deluxe-Ensuite/
-    - assets/images/Wembar/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Crofton/
     - assets/images/Crofton/Deluxe-Double_room-Ensuite/
     - assets/images/Crofton/Triple_room-Deluxe-Ensuite/
-    - assets/images/Crofton/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Holland/
     - assets/images/Holland/Deluxe-Double_room-Ensuite/
     - assets/images/Holland/Triple_room-Deluxe-Ensuite/
-    - assets/images/Holland/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Malvern/
     - assets/images/Malvern/Deluxe-Double_room-Ensuite/
     - assets/images/Malvern/Triple_room-Deluxe-Ensuite/
-    - assets/images/Malvern/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Orlando/
     - assets/images/Orlando/Deluxe-Double_room-Ensuite/
     - assets/images/Orlando/Triple_room-Deluxe-Ensuite/
-    - assets/images/Orlando/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Russell/
     - assets/images/Russell/Deluxe-Double_room-Ensuite/
     - assets/images/Russell/Triple_room-Deluxe-Ensuite/
-    - assets/images/Russell/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/TorPark/
     - assets/images/TorPark/Deluxe-Double_room-Ensuite/
     - assets/images/TorPark/Triple_room-Deluxe-Ensuite/
-    - assets/images/TorPark/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Richmond/
     - assets/images/Richmond/Deluxe-Double_room-Ensuite/
     - assets/images/Richmond/Triple_room-Deluxe-Ensuite/
-    - assets/images/Richmond/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Alumhurst/
     - assets/images/Alumhurst/Deluxe-Double_room-Ensuite/
     - assets/images/Alumhurst/Triple_room-Deluxe-Ensuite/
     - assets/images/GreenGables/
     - assets/images/GreenGables/Deluxe-Double_room-Ensuite/
     - assets/images/GreenGables/Triple_room-Deluxe-Ensuite/
-    - assets/images/GreenGables/Family room-Deluxe-Ensuite-with_kitchenette/
     - assets/icons/
     - assets/images/LG/SliderPhotos/
     - assets/images/Elmo/SliderPhotos/
@@ -303,6 +290,20 @@ flutter:
     - assets/images/Alumhurst/Alumhurst1.png
     - assets/images/LG/LG1.jpg
     - assets/images/Wembar/Wember1.png
+    - assets/images/LG/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Elmo/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Avalon/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Bonair/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Wembar/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Crofton/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Holland/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Malvern/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Orlando/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Russell/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/TorPark/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Richmond/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/GreenGables/Family-Room-Deluxe-Ensuite-with_kitchenette/
 
 fonts:
   - family: Kalnia
