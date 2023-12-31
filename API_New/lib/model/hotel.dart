@@ -4,6 +4,7 @@
 
 // import 'package:meta/meta.dart';
 import 'dart:convert';
+import 'dart:ffi';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/icons.dart';
 
@@ -42,7 +43,7 @@ class Hotel {
   final String description;
   final String location;
   final String starRate;
-  final int roomRate;
+  final String roomRate;
   final String profilePicture;
   final List<String> images;
   // final Categories categories;
@@ -70,7 +71,7 @@ class Hotel {
     String? description,
     String? location,
     String? starRate,
-    int? roomRate,
+    String? roomRate,
     String? profilePicture,
     List<String>? images,
     // Categories? categories,

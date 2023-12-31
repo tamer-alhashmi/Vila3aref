@@ -47,7 +47,7 @@ class HotelsApi {
         description: e['description'],
         location: e['location'],
         starRate: e['starRate'],
-        roomRate: e['roomRate'].toString(),
+        roomRate: e['roomRate'],
         id: e['id'],
         profilePicture: e['profilePicture'],
         // images: List<String>.from(e['images']),
