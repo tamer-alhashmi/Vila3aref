@@ -205,6 +205,9 @@ flutter:
     - assets/images/Richmond/Family-Room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/Alumhurst/Family-room-Deluxe-Ensuite-with_kitchenette/
     - assets/images/GreenGables/Family-Room-Deluxe-Ensuite-with_kitchenette/
+    - assets/images/Russell/SliderPhotos/4.jpg
+    - assets/images/Russell/SliderPhotos/5.jpg
+    - assets/images/Russell/SliderPhotos/6.jpg
 
 fonts:
   - family: Kalnia
