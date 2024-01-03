@@ -5,6 +5,7 @@
 // import 'package:meta/meta.dart';
 import 'dart:convert';
 import 'package:api_new/model/icons.dart';
+import 'package:api_new/services/hotels_apis.dart';
 
 Properties propertiesFromJson(String str) =>
     Properties.fromJson(json.decode(str));
@@ -33,10 +34,11 @@ class Properties {
         "hotels": List<dynamic>.from(hotels.map((x) => x.toJson())),
       };
 }
+
 class Hotel {
   final String name;
   final int id;
-  // final Reception reception;
+  final Reception reception;
   final int discount;
   final String description;
   final String location;
@@ -44,27 +46,27 @@ class Hotel {
   final String roomRate;
   final String profilePicture;
   final List<String> images;
-  // final Categories categories;
-  // final LikeDislike likeDislike;
+  final Categories categories;
+  final LikeDislike likeDislike;
   Hotel({
     required this.name,
     required this.id,
-    // required this.reception,
+    required this.reception,
     required this.discount,
     required this.description,
     required this.location,
     required this.starRate,
     required this.roomRate,
     required this.profilePicture,
-    required this.images, required categories, required likeDislike, required amenities,
-    // required this.categories,
-    // required this.likeDislike,
+    required this.images,
+    required this.categories,
+    required this.likeDislike, required amenities,
   });
 
   Hotel copyWith({
     String? name,
     int? id,
-    // Reception? reception,
+    Reception? reception,
     int? discount,
     String? description,
     String? location,
@@ -72,13 +74,13 @@ class Hotel {
     String? roomRate,
     String? profilePicture,
     List<String>? images,
-    // Categories? categories,
-    // LikeDislike? likeDislike,
+    Categories? categories,
+    LikeDislike? likeDislike,
   }) =>
       Hotel(
         name: name ?? this.name,
         id: id ?? this.id,
-        // reception: reception ?? this.reception,
+        reception: reception ?? this.reception,
         discount: discount ?? this.discount,
         description: description ?? this.description,
         location: location ?? this.location,
@@ -86,38 +88,40 @@ class Hotel {
         roomRate: roomRate ?? this.roomRate,
         profilePicture: profilePicture ?? this.profilePicture,
         images: images ?? this.images,
-        // categories: categories ?? this.categories,
-        // likeDislike: likeDislike ?? this.likeDislike,
+        categories: categories ?? this.categories,
+        likeDislike: likeDislike ?? this.likeDislike,
+        amenities: categories?.deluxeDoubleRoomEnsuite.amenities,
       );
 
   factory Hotel.fromJson(Map<String, dynamic> json) => Hotel(
         name: json["name"],
         id: json["id"],
-    // reception: receptionValues.map[json["reception"]],
-    discount: json["discount"],
-    description: json["description"],
+        reception: receptionValues.map[json["reception"]],
+        discount: json["discount"],
+        description: json["description"],
         location: json["location"],
         starRate: json["starRate"],
         roomRate: json["roomRate"],
         profilePicture: json["profilePicture"],
         images: List<String>.from(json["images"].map((x) => x)),
-        // categories: Categories.fromJson(json["categories"]),
-        // likeDislike: LikeDislike.fromJson(json["likeDislike"]),
+        categories: Categories.fromJson(json["categories"]),
+        likeDislike: LikeDislike.fromJson(json["likeDislike"]),
+        amenities: null,
       );
 
   Map<String, dynamic> toJson() => {
         "images": List<dynamic>.from(images.map((x) => x)),
         "name": name,
         "id": id,
-        // "reception": receptionValues.reverse[reception],
+        "reception": receptionValues.reverse[reception],
         "discount": discount,
         "description": description,
         "location": location,
         "starRate": starRate,
         "roomRate": roomRate,
         "profilePicture": profilePicture,
-        // "categories": categories.toJson(),
-        // "likeDislike": likeDislike.toJson(),
+        "categories": categories.toJson(),
+        "likeDislike": likeDislike.toJson(),
       };
 }
 
@@ -349,10 +353,10 @@ class LikeDislike {
       };
 }
 
-// enum Reception { MANNED, UNMANNED }
-//
-// final receptionValues =
-//     EnumValues({"manned": Reception.MANNED, "unmanned": Reception.UNMANNED});
+enum Reception { Manned, Unmanned }
+
+final receptionValues =
+    EnumValues({"manned": Reception.Manned, "unmanned": Reception.Unmanned});
 
 class EnumValues<T> {
   Map<String, T> map;
@@ -376,4 +380,3 @@ class HotelIcons {
   String get moreIcon => getMoreSVGPath();
   String get wifiIcon => getWifiSVGPath();
 }
-

@@ -277,7 +277,7 @@ class _HotelDetailState extends State<HotelDetail> {
                   _userAdultSelected = adults;
                   _userChildrenSelected = children;
                 });
-              },
+              }, hotel: widget.hotel,
             )
 
           ]),

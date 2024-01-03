@@ -21,10 +21,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -53,9 +53,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -85,9 +85,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -117,9 +117,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -146,9 +146,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -203,10 +203,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -235,9 +235,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -267,9 +267,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -299,9 +299,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -328,9 +328,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -385,10 +385,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -417,9 +417,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -449,9 +449,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -481,9 +481,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -510,9 +510,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -567,10 +567,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -599,9 +599,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -631,9 +631,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -663,9 +663,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -692,9 +692,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -749,10 +749,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -781,9 +781,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -813,9 +813,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -845,9 +845,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -874,9 +874,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -931,10 +931,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -963,9 +963,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -995,9 +995,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1027,9 +1027,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1056,9 +1056,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -1113,10 +1113,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -1145,9 +1145,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -1177,9 +1177,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1209,9 +1209,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1238,9 +1238,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -1295,10 +1295,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -1327,9 +1327,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -1359,9 +1359,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1391,9 +1391,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1420,9 +1420,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -1477,10 +1477,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -1509,9 +1509,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -1541,9 +1541,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1573,9 +1573,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1602,9 +1602,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -1659,10 +1659,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -1691,9 +1691,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -1723,9 +1723,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1755,9 +1755,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1784,9 +1784,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -1841,10 +1841,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -1873,9 +1873,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -1905,9 +1905,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -1937,9 +1937,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -1966,9 +1966,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -2023,10 +2023,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -2055,9 +2055,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -2087,9 +2087,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -2119,9 +2119,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -2148,9 +2148,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -2205,10 +2205,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -2237,9 +2237,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -2269,9 +2269,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -2301,9 +2301,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -2330,9 +2330,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
@@ -2387,10 +2387,10 @@
         "7.jpg"
       ],
       "categories": {
-        "Deluxe-Double room-Ensuite": {
+        "DeluxeDoubleRoomEnsuite": {
           "personNumber": 2,
-          "catname": "Deluxe-Double room-Ensuite",
-          "categorydescreption": "Deluxe-Double room-Ensuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
+          "catname": "Deluxe Double Room Ensuite",
+          "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "15/MSQ, 161/FTSQ",
           "amenities": [
             "Free WiFi Internet",
@@ -2419,9 +2419,9 @@
             "Hot water"
           ]
         },
-        "Family room Deluxe Ensuite with kitchenette": {
-"personNumber": 5,
-          "catname": "Family room-Deluxe-Ensuite-with kitchenette",
+        "FamilyRoomDeluxeEnsuite_kitchenette": {
+          "personNumber": 5,
+          "catname": "Family room-Deluxe Ensuite with kitchenette",
           "categorydescreption": "Family room-Deluxe-Ensuite-with kitchenette, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "25/MSQ, 269/FTSQ",
           "amenities": [
@@ -2451,9 +2451,9 @@
             "Hot water"
           ]
         },
-        "Triple room-Deluxe-Ensuite": {
-"personNumber": 3,
-          "catname": "Triple room-Deluxe-Ensuite",
+        "TripleRoomDeluxeEnsuite": {
+          "personNumber": 3,
+          "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "20/MSQ, 215/FTSQ",
           "amenities": [
@@ -2483,9 +2483,9 @@
             "Hot water"
           ]
         },
-        "Standard-Double room-Ensuite": {
-"personNumber": 2,
-          "catname": "Standard-Double room-Ensuite",
+        "StandardDoubleRoomEnsuite": {
+          "personNumber": 2,
+          "catname": "Standard Double Room Ensuite",
           "categorydescreption": "Enjoy easy access to popular shops and restaurants from this charming & centered place to stay, Very Close To the Beach. Standard-Double room-en-suite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times.…",
           "roomsize": "11/MSQ, 118/FTSQ",
           "amenities": [
@@ -2512,9 +2512,9 @@
             "Hot water"
           ]
         },
-        "Twin room-Standard-Ensuite": {
-"personNumber": 3,
-          "catname": "Twin room-Standard-Ensuite",
+        "TwinRoomStandardEnsuite": {
+          "personNumber": 3,
+          "catname": "Twin Room Standard Ensuite",
           "categorydescreption": "Standard-Twin room-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
           "roomsize": "13/MSQ, 140/FTSQ",
           "amenities": [
