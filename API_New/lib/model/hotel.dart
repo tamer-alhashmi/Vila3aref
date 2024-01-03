@@ -4,8 +4,6 @@
 
 // import 'package:meta/meta.dart';
 import 'dart:convert';
-import 'dart:ffi';
-import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/icons.dart';
 
 Properties propertiesFromJson(String str) =>
@@ -58,7 +56,7 @@ class Hotel {
     required this.starRate,
     required this.roomRate,
     required this.profilePicture,
-    required this.images,
+    required this.images, required categories, required likeDislike, required amenities,
     // required this.categories,
     // required this.likeDislike,
   });

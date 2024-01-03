@@ -1,5 +1,8 @@
 import 'package:api_new/model/hotel.dart';
+import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+
+// Chick-in & Chick-out Container
 class DateSelectionWidget extends StatefulWidget {
   const DateSelectionWidget({super.key, required Hotel hotel, required this.onDatesSelected});
 
@@ -45,33 +48,133 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // int nights =
-    //     DateSelectionWidget.calculateNightsStatic(_checkInDate, _checkOutDate);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        ListTile(
-          title: const Text('Check-in Date'),
-          subtitle: _checkInDate == null
-              ? const Text('Select Date')
-              : Text('${_checkInDate!.toLocal()}'.split(' ')[0]),
-          onTap: () => _selectDate(context, true),
-        ),
-        const SizedBox(height: 16),
-        ListTile(
-          title: const Text('Check-out Date'),
-          subtitle: _checkOutDate == null
-              ? const Text('Select Date')
-              : Text('${_checkOutDate!.toLocal()}'.split(' ')[0]),
-          onTap: () => _selectDate(context, false),
-        ),
-        const SizedBox(height: 16),
-        // ElevatedButton(
-        //   // Select Button
-        //   onPressed: _saveDates,
-        //   child: const Text('Select'),
-        // ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: InkWell(
+                  onTap: () => _selectDate(context, true),
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: AppTheme.buiColorCtaBackground.withOpacity(0.1),
+                      // border: Border.all(color: AppTheme.buiColorCtaBackground),
+                      // borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Check-in Date',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        _checkInDate == null
+                            ? const Text(
+                          'Select Date',
+                          style: TextStyle(color: AppTheme.buiColorCtaBackground),
+                        )
+                            : Text(
+                          '${_checkInDate!.toLocal()}'.split(' ')[0],
+                          style: const TextStyle(
+                            color: AppTheme.buiColorCtaBackground,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: InkWell(
+                  onTap: () => _selectDate(context, false),
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: AppTheme.buiColorCtaBackground.withOpacity(0.1),
+                      // border: Border.all(color: AppTheme.buiColorCtaBackground),
+                      // borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Check-out Date',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        _checkOutDate == null
+                            ? const Text(
+                          'Select Date',
+                          style: TextStyle(color: AppTheme.buiColorCtaBackground),
+                        )
+                            : Text(
+                          '${_checkOutDate!.toLocal()}'.split(' ')[0],
+                          style: const TextStyle(
+                            color: AppTheme.buiColorCtaBackground,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          // ElevatedButton(
+          //   // Select Button
+          //   onPressed: _saveDates,
+          //   child: const Text('Select'),
+          // ),
+        ],
+      ),
     );
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   Widget build(BuildContext context) {
+//     return Column(
+//       crossAxisAlignment: CrossAxisAlignment.stretch,
+//       children: [
+//         Row(
+//           children: [
+//             ListTile(
+//               title: const Text('Check-in Date'),
+//               subtitle: _checkInDate == null
+//                   ? const Text('Select Date')
+//                   : Text('${_checkInDate!.toLocal()}'.split(' ')[0]),
+//               onTap: () => _selectDate(context, true),
+//             ),
+//             ListTile(
+//               title: const Text('Check-out Date'),
+//               subtitle: _checkOutDate == null
+//                   ? const Text('Select Date')
+//                   : Text('${_checkOutDate!.toLocal()}'.split(' ')[0]),
+//               onTap: () => _selectDate(context, false),
+//             ),
+//           ],
+//         ),
+//         // ElevatedButton(
+//         //   // Select Button
+//         //   onPressed: _saveDates,
+//         //   child: const Text('Select'),
+//         // ),
+//       ],
+//     );
+//   }
 }

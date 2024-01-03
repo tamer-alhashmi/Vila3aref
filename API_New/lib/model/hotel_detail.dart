@@ -1,12 +1,13 @@
-import 'dart:ffi' as prefix;
 import 'package:api_new/model/Reviews_Box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
+import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
 import 'dart:async';
 import 'package:api_new/model/hotel.dart';
 import 'package:flutter/material.dart';
+import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
 
 class HotelDetail extends StatefulWidget {
   const HotelDetail({super.key, required this.hotel});
@@ -20,6 +21,9 @@ class _HotelDetailState extends State<HotelDetail> {
   late Timer _timer;
   int _currentPage = 0;
   int _nights = 0; // Added variable to store nights
+  int _userRoomSelected = 1;
+  int _userAdultSelected = 1;
+  int _userChildrenSelected = 0;
 
   // late List<Hotel> hotel = [];
   @override
@@ -91,128 +95,131 @@ class _HotelDetailState extends State<HotelDetail> {
           bottomRight: Radius.circular(6),
         )),
       ),
-      body: Column(
-        children: [
-          Column(
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    // Hotel name
-                    '$name Hotel',
-                    style: TextStyle(
-                      color: const Color(0xFF0F0F0F),
-                      fontSize: 20,
-                      fontFamily: GoogleFonts.almarai().fontFamily,
-                      fontWeight: FontWeight.bold,
-                      height: 1,
-                    ),
-                  ), // Hotel name
-                  // const SizedBox(width: 8),
-                  ReviewsBox(hotel: widget.hotel),
-                ], // Name & Star
-              ), //Slider
-              SingleChildScrollView(
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: 200,
-                      child: Stack(
-                        children: <Widget>[
-                          PageView.builder(
-                            itemCount: widget.hotel.images.length,
-                            controller: _pageController,
-                            onPageChanged: (int index) {
-                              setState(() {
-                                _currentPage = index;
-                              });
-                            },
-                            itemBuilder: (context, index) {
-                              return Container(
-                                margin:
-                                    const EdgeInsets.symmetric(horizontal: 8.0),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/${widget.hotel.name}/SliderPhotos/${widget.hotel.images[index]}'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              );
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                    Center(
-                      child: Container(
-                        // alignment: Alignment.center,
-                        padding: const EdgeInsets.all(15),
-                        child: PageViewDotIndicator(
-                          currentItem: _currentPage,
-                          unselectedColor: Colors.black26,
-                          selectedColor: Colors.black54,
-                          count: widget.hotel.images.length,
-                          size: const Size(12, 12),
-                          unselectedSize: const Size(8, 8),
-                          duration: const Duration(milliseconds: 200),
-                          margin: const EdgeInsets.symmetric(horizontal: 8),
-                          padding: EdgeInsets.zero,
-                          alignment: Alignment.center,
-                          fadeEdges: false,
-                          // boxShape: BoxShape.circle, //defaults to circle
-                          // borderRadius: BorderRadius.circular(5),
-
-                          //only for rectangle shape
-                          // onItemClicked: (index) { }
-                        ),
-                      ),
-                    ) // Dots
-                  ],
-                ),
-              ),
-            ],
-          ), //Slider & Dots...
-          Container(
-            margin: const EdgeInsets.only(left: 10),
-            child: Column(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Column(
               children: [
                 Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      '$discount % off',
-                      style: const TextStyle(
-                        color: Colors.teal,
+                      // Hotel name
+                      '$name Hotel',
+                      style: TextStyle(
+                        color: const Color(0xFF0F0F0F),
+                        fontSize: 20,
+                        fontFamily: GoogleFonts.almarai().fontFamily,
+                        fontWeight: FontWeight.bold,
+                        height: 1,
                       ),
-                    ),
-                    const SizedBox(
-                      width: 25,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(3),
-                        color: const Color(0xffbbdefb),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.only(
-                            top: 1, bottom: 1, left: 3, right: 3),
-                        child: Text(
-                          "Economic Discount",
-                          style: TextStyle(
-                            // backgroundColor: Colors.tealAccent,
-                            color: Colors.blue,
-                          ),
+                    ), // Hotel name
+                    // const SizedBox(width: 8),
+                    ReviewsBox(hotel: widget.hotel),
+                  ], // Name & Star
+                ), //Slider
+                SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 200,
+                        child: Stack(
+                          children: <Widget>[
+                            PageView.builder(
+                              itemCount: widget.hotel.images.length,
+                              controller: _pageController,
+                              onPageChanged: (int index) {
+                                setState(() {
+                                  _currentPage = index;
+                                });
+                              },
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin:
+                                      const EdgeInsets.symmetric(horizontal: 8.0),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/${widget.hotel.name}/SliderPhotos/${widget.hotel.images[index]}'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
                         ),
                       ),
-                    ) // Economic Discount
-                  ],
+                      Center(
+                        child: Container(
+                          // alignment: Alignment.center,
+                          padding: const EdgeInsets.all(15),
+                          child: PageViewDotIndicator(
+                            currentItem: _currentPage,
+                            unselectedColor: Colors.black26,
+                            selectedColor: Colors.black54,
+                            count: widget.hotel.images.length,
+                            size: const Size(12, 12),
+                            unselectedSize: const Size(8, 8),
+                            duration: const Duration(milliseconds: 200),
+                            margin: const EdgeInsets.symmetric(horizontal: 8),
+                            padding: EdgeInsets.zero,
+                            alignment: Alignment.center,
+                            fadeEdges: false,
+                            // boxShape: BoxShape.circle, //defaults to circle
+                            // borderRadius: BorderRadius.circular(5),
+
+                            //only for rectangle shape
+                            // onItemClicked: (index) { }
+                          ),
+                        ),
+                      ) // Dots
+                    ],
+                  ),
+                ),
+              ],
+            ), //Slider & Dots...
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        '$discount % off',
+                        style: const TextStyle(
+                          color: Colors.teal,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3),
+                          color: const Color(0xffbbdefb),
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.only(
+                              top: 1, bottom: 1, left: 3, right: 3),
+                          child: Text(
+                            "Economic Discount",
+                            style: TextStyle(
+                              // backgroundColor: Colors.tealAccent,
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ) // Economic Discount
+                    ],
+                  ),
                 ), //10% Economic Discount
                 Row(
                   children: [
@@ -225,16 +232,16 @@ class _HotelDetailState extends State<HotelDetail> {
                     children: [
                   Text( // Price after Discount
                       _nights > 0
-                          ?'\$${_nights * double.parse(roomRate)}'
-                      : '\$${double.parse((roomRate))}',
+                          ?'£${_nights * double.parse(roomRate)}'
+                      : '£${double.parse((roomRate))}',
                       style: const TextStyle(
                           color: Colors.red,
                         decoration: TextDecoration.lineThrough,
                       decorationColor: Colors.red)), // Display price before discount
                   Text( // Total Price
                     _nights > 0
-                      ?'  :  \$${(_nights * double.parse(roomRate) * (1 - discount / 100))
-                      .toStringAsFixed(2)}':'  :  \$${(double.parse(roomRate) * (1 - discount / 100)).
+                      ?'  :  £${(_nights * double.parse(roomRate) * (1 - discount / 100))
+                      .toStringAsFixed(2)}':'  :  £${(double.parse(roomRate) * (1 - discount / 100)).
                     toStringAsFixed(2)}',),
                        // Calculate and display total price
                 ]),
@@ -245,20 +252,37 @@ class _HotelDetailState extends State<HotelDetail> {
                   ],
                 )
               ],
+            ), //  Economic Discount
+            // DateSelectionWidget(hotel: widget.hotel, onDatesSelected: (DateTime? checkInDate, DateTime? checkOutDate, int nights) {  },),
+            DateSelectionWidget(
+              hotel: widget.hotel,
+              onDatesSelected: (checkInDate, checkOutDate, nights) {
+                // Calculate nights here
+                setState(() {
+                  _nights = nights;
+                });
+              },
             ),
-          ), //  Economic Discount
-          // DateSelectionWidget(hotel: widget.hotel, onDatesSelected: (DateTime? checkInDate, DateTime? checkOutDate, int nights) {  },),
-          DateSelectionWidget(
-            hotel: widget.hotel,
-            onDatesSelected: (checkInDate, checkOutDate, nights) {
-              // Calculate nights here
-              setState(() {
-                _nights = nights;
-              });
-            },
-          ),
-        ],
-      ),
-    );
+             const Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text('Rooms and guests'),
+              ],
+            ),
+            RoomsAndGuestsSelector(
+              onSelectionChanged: (rooms , adults, children) {
+                setState(() {
+                  _userRoomSelected = rooms;
+                  _userAdultSelected = adults;
+                  _userChildrenSelected = children;
+                });
+              },
+            )
+
+          ]),
+    ));
   }
 }
+
+

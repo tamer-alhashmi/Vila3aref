@@ -21,24 +21,24 @@ class HotelsApi {
     final json = jsonDecode(body);
     final property = json['property'] as List<dynamic>;
     final hotels = property.map((e) {
-      // final categories = HotelCategory(
-      //   deluxeDoubleRoomEnsuite:
-      //       e['categories']['DeluxeDoubleRoomEnsuite'].toString(),
-      //   familyRoomDeluxeEnsuiteWithkitchenette: e['categories']
-      //           ['FamilyRoomDeluxeEnsuiteWithkitchenette']
-      //       .toString(),
-      //   standardDoubleRoomEnsuite:
-      //       e['categories']['StandardDoubleRoomEnsuite'].toString(),
-      //   tripleRoomDeluxeEnsuite:
-      //       e['categories']['TripleRoomDeluxeEnsuite'].toString(),
-      //   twinRoomStandardEnsuite:
-      //       e['categories']['TwinRoomStandardEnsuite'].toString(),
-      // );
-      //
-      // final likeDislike = LikeDisLike(
-      // likes: e['likeDislike']['likes'],
-      // dislikes: e['likeDislike']['dislikes'],
-      // userAction: e['likeDislike']['userAction']);
+      final categories = HotelCategory(
+        deluxeDoubleRoomEnsuite:
+            e['categories']['DeluxeDoubleRoomEnsuite'].toString(),
+        familyRoomDeluxeEnsuiteWithkitchenette: e['categories']
+                ['FamilyRoomDeluxeEnsuiteWithkitchenette']
+            .toString(),
+        standardDoubleRoomEnsuite:
+            e['categories']['StandardDoubleRoomEnsuite'].toString(),
+        tripleRoomDeluxeEnsuite:
+            e['categories']['TripleRoomDeluxeEnsuite'].toString(),
+        twinRoomStandardEnsuite:
+            e['categories']['TwinRoomStandardEnsuite'].toString(),
+      );
+
+      final likeDislike = LikeDisLike(
+      likes: e['likeDislike']['likes'],
+      dislikes: e['likeDislike']['dislikes'],
+      userAction: e['likeDislike']['userAction']);
 
       return Hotel(
         name: e['name'],
@@ -52,12 +52,10 @@ class HotelsApi {
         profilePicture: e['profilePicture'],
         // images: List<String>.from(e['images']),
         images: List<String>.from(e['images']),
-        // categories: e['categories'],
-        // likeDislike: e['likeDislike'], // Convert to List<String>
 
-        // likeDislike: e['likeDislike'],
-        // categories: e['categories'],
-        // amenities: e['categories'][CategoryAmenities] ,
+        categories: e['categories'],
+        likeDislike: e['likeDislike'], // Convert to List<String>
+        amenities: e['categories'][CategoryAmenities] ,
       );
     }).toList();
     return hotels;
