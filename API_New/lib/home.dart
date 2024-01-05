@@ -43,7 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(
             color: Colors.white,
             letterSpacing: 1.7,
-            fontFamily: 'Kalnia',
           ),
         ),
         centerTitle: true,
@@ -85,7 +84,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-
       bottomNavigationBar: const CustomBottomBar(
           bottomAppBar: BottomAppBar()), //bottom Navigation Bar
       body: Visibility(
