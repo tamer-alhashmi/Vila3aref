@@ -1,11 +1,10 @@
 import 'dart:convert';
-// import '../model/hotel_categories.dart';
-// import 'package:apireset2/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import '../model/hotel.dart';
+
 
 class HotelsApi {
   static Future<List<Hotel>> fetchHotel() async {
@@ -18,8 +17,11 @@ class HotelsApi {
     final response = await http.get(uri);
     final body = response.body;
     final json = jsonDecode(body);
-    final property = json['property'] as List<dynamic>;
-    final hotels = property.map((e) {
+    final hotel = json['hotel'] as List<dynamic>;
+    if (kDebugMode) {
+      print('fetchHotel Success');
+    }
+    final hotels = hotel.map((e) {
       return Hotel(
         name: e['name'],
         reception: e['reception'],
@@ -30,7 +32,7 @@ class HotelsApi {
         roomRate: e['roomRate'],
         id: e['id'],
         profilePicture: e['profilePicture'],
-        images: List<String>.from(json["images"].map((x) => x)),
+        images: List<String>.from(e["images"].map((x) => x)),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
         // amenities: e['categories']["amenities"],

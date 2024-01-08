@@ -1,4 +1,4 @@
-import 'package:api_new/model/Reviews_Box.dart';
+import 'package:api_new/model/reviews_box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
 import 'package:api_new/theme/app_theme.dart';
@@ -144,7 +144,7 @@ class _HotelDetailState extends State<HotelDetail> {
                                     borderRadius: BorderRadius.circular(8.0),
                                     image: DecorationImage(
                                       image: AssetImage(
-                                          'assets/images/${widget.hotel.name}/SliderPhotos/${widget.hotel.images[index]}'),
+                                          'assets/images/${widget.hotel.name}/SliderPhotos/${widget.hotel.images[index] ?? "assets/images/${widget.hotel.name}/Alumhurst1.png"}'),
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -263,11 +263,15 @@ class _HotelDetailState extends State<HotelDetail> {
                 });
               },
             ),
+
+
+
              const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text('Rooms and guests'),
+                // Text('3 rooms, 6 adults, 0 children')
               ],
             ),
             RoomsAndGuestsSelector(

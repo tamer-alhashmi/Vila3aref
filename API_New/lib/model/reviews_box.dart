@@ -2,11 +2,15 @@ import 'package:api_new/model/hotel.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
+
 class ReviewsBox extends StatelessWidget {
-  const ReviewsBox({super.key, required this.hotel});
+   const ReviewsBox({super.key, required this.hotel});
 
   final Hotel hotel;
   String get starRate => hotel.starRate;
+
+  // final String starRate = HotelElement.starRate;
+
 
   @override
   Widget build(BuildContext context) {

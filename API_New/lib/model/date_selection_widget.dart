@@ -49,7 +49,7 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(top: 8.0, right: 8.0, bottom: 8.0,left: 0.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -70,8 +70,8 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'Check-in Date',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          'Check-in',
+                          // style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         _checkInDate == null
                             ? const Text(
@@ -81,7 +81,9 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
                             : Text(
                           '${_checkInDate!.toLocal()}'.split(' ')[0],
                           style: const TextStyle(
-                            color: AppTheme.buiColorCtaBackground,
+                              color: AppTheme.buiColorCtaBackground,
+                              fontWeight: FontWeight.bold,
+                            fontSize: 16
                           ),
                         ),
                       ],
@@ -104,18 +106,23 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'Check-out Date',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          'Check-out',
                         ),
                         _checkOutDate == null
                             ? const Text(
                           'Select Date',
-                          style: TextStyle(color: AppTheme.buiColorCtaBackground),
+                          style: TextStyle(
+                              color: AppTheme.buiColorCtaBackground
+                          ),
+
+
                         )
                             : Text(
                           '${_checkOutDate!.toLocal()}'.split(' ')[0],
                           style: const TextStyle(
                             color: AppTheme.buiColorCtaBackground,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16
                           ),
                         ),
                       ],
@@ -125,56 +132,8 @@ class _DateSelectionWidgetState extends State<DateSelectionWidget> {
               ),
             ],
           ),
-          // ElevatedButton(
-          //   // Select Button
-          //   onPressed: _saveDates,
-          //   child: const Text('Select'),
-          // ),
         ],
       ),
     );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   Widget build(BuildContext context) {
-//     return Column(
-//       crossAxisAlignment: CrossAxisAlignment.stretch,
-//       children: [
-//         Row(
-//           children: [
-//             ListTile(
-//               title: const Text('Check-in Date'),
-//               subtitle: _checkInDate == null
-//                   ? const Text('Select Date')
-//                   : Text('${_checkInDate!.toLocal()}'.split(' ')[0]),
-//               onTap: () => _selectDate(context, true),
-//             ),
-//             ListTile(
-//               title: const Text('Check-out Date'),
-//               subtitle: _checkOutDate == null
-//                   ? const Text('Select Date')
-//                   : Text('${_checkOutDate!.toLocal()}'.split(' ')[0]),
-//               onTap: () => _selectDate(context, false),
-//             ),
-//           ],
-//         ),
-//         // ElevatedButton(
-//         //   // Select Button
-//         //   onPressed: _saveDates,
-//         //   child: const Text('Select'),
-//         // ),
-//       ],
-//     );
-//   }
 }
