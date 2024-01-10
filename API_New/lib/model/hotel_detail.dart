@@ -1,3 +1,4 @@
+import 'package:api_new/model/hotel_map_address.dart';
 import 'package:api_new/model/reviews_box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
@@ -61,6 +62,7 @@ class _HotelDetailState extends State<HotelDetail> {
     int discount = widget.hotel.discount;
     String description = widget.hotel.description;
     String location = widget.hotel.location;
+    String city = widget.hotel.city;
     String starRate = widget.hotel.starRate;
     String roomRate = widget.hotel.roomRate;
     String profilePicture = widget.hotel.profilePicture;
@@ -253,7 +255,6 @@ class _HotelDetailState extends State<HotelDetail> {
                 )
               ],
             ), //  Economic Discount
-            // DateSelectionWidget(hotel: widget.hotel, onDatesSelected: (DateTime? checkInDate, DateTime? checkOutDate, int nights) {  },),
             DateSelectionWidget(
               hotel: widget.hotel,
               onDatesSelected: (checkInDate, checkOutDate, nights) {
@@ -263,17 +264,6 @@ class _HotelDetailState extends State<HotelDetail> {
                 });
               },
             ),
-
-
-
-             const Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text('Rooms and guests'),
-                // Text('3 rooms, 6 adults, 0 children')
-              ],
-            ),
             RoomsAndGuestsSelector(
               onSelectionChanged: (rooms , adults, children) {
                 setState(() {
@@ -282,8 +272,10 @@ class _HotelDetailState extends State<HotelDetail> {
                   _userChildrenSelected = children;
                 });
               }, hotel: widget.hotel,
-            )
-
+            ),
+            // HotelMap(
+            //   hotel: widget.hotel,
+            // )
           ]),
     ));
   }

@@ -38,6 +38,7 @@ class Hotel {
   final String reception;
   final int discount;
   final String description;
+  final String city;
   final String location;
   final String starRate;
   final String roomRate;
@@ -47,17 +48,19 @@ class Hotel {
   // final Categories categories;
   // final LikeDislike likeDislike;
   // final Amenity amenities;
-  Hotel({
-    required this.name,
-    required this.reception,
-    required this.discount,
-    required this.description,
-    required this.location,
-    required this.starRate,
-    required this.roomRate,
-    required this.id,
-    required this.profilePicture,
-    required this.images,
+  Hotel(
+       {
+        required this.name,
+        required this.reception,
+        required this.discount,
+        required this.description,
+        required this.location,
+         required this.city,
+        required this.starRate,
+        required this.roomRate,
+        required this.id,
+        required this.profilePicture,
+        required this.images,
     // required this.categories,
     // required this.likeDislike,
     // required this.amenities,
@@ -99,6 +102,7 @@ class Hotel {
       discount: json['discount'],
       description: json['description'],
       location: json['location'],
+      city: json['city'],
       starRate: json['starRate'],
       roomRate: json['roomRate'],
       id: json['id'],
@@ -116,6 +120,7 @@ class Hotel {
         "discount": discount,
         "description": description,
         "location": location,
+    "city": city,
         "starRate": starRate,
         "roomRate": roomRate,
         "profilePicture": profilePicture,

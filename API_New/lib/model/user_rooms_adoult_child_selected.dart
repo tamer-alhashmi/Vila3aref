@@ -1,12 +1,12 @@
 import 'package:api_new/model/hotel.dart';
 import 'package:flutter/material.dart';
 
-
 class RoomsAndGuestsSelector extends StatefulWidget {
   final Hotel hotel;
 
-  const RoomsAndGuestsSelector ({super.key, required this.onSelectionChanged, required this.hotel});
-final Function(int, int, int) onSelectionChanged;
+  const RoomsAndGuestsSelector(
+      {super.key, required this.onSelectionChanged, required this.hotel});
+  final Function(int, int, int) onSelectionChanged;
   @override
   _RoomsAndGuestsSelectorState createState() => _RoomsAndGuestsSelectorState();
 }
@@ -14,7 +14,7 @@ final Function(int, int, int) onSelectionChanged;
 class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
   int userRoomSelected = 1;
   int userAdultSelected = 1;
-  int userChildrenSelected = 0;
+  int userChildrenSelected = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -24,34 +24,39 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
       },
       child: Container(
         padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
-              spreadRadius: 5,
-              blurRadius: 7,
-              offset: const Offset(0, 3),
-            ),
-          ],
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: Colors.grey.withOpacity(0.5),
+          //     spreadRadius: 5,
+          //     blurRadius: 7,
+          //     offset: const Offset(0, 3),
+          //   ),
+          // ],
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
           children: [
-            const Text(
-              'Rooms and guests',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Rooms and guests',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+
+              ],
             ),
             Row(
               children: [
-                Text('$userRoomSelected'),
+                Text('$userRoomSelected rooms'),
                 const SizedBox(width: 8),
-                Text('$userAdultSelected'),
+                Text('$userAdultSelected adults'),
                 const SizedBox(width: 8),
-                Text('$userChildrenSelected'),
+                Text('$userChildrenSelected children'),
               ],
             ),
           ],
@@ -64,7 +69,9 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
     await showDialog(
       context: context,
       builder: (BuildContext context) {
-        return AlertDialog(
+      return StatefulBuilder(
+        builder: (BuildContext context, StateSetter setState) {
+          return AlertDialog(
           title: const Text('Rooms and Guests Selector'),
           content: Column(
             children: [
@@ -75,6 +82,7 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
               const Text('Select the number of rooms:'),
               Slider(
                 value: userRoomSelected.toDouble(),
+                autofocus: true,
                 min: 1,
                 max: 10,
                 onChanged: (value) {
@@ -86,6 +94,7 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
               const Text('Select the number of adults:'),
               Slider(
                 value: userAdultSelected.toDouble(),
+                autofocus: true,
                 min: 1,
                 max: 20,
                 onChanged: (value) {
@@ -97,6 +106,7 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
               const Text('Select the number of children:'),
               Slider(
                 value: userChildrenSelected.toDouble(),
+                autofocus: true,
                 min: 1,
                 max: 5,
                 onChanged: (value) {
@@ -120,12 +130,14 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
                   userChildrenSelected,
                 );
               },
-              child: const Text('Apply',style: TextStyle(
-                color: Colors.blue
-              ),),
+              child: const Text(
+                'Apply',
+                style: TextStyle(color: Colors.blue),
+              ),
             ),
           ],
         );
       },
     );
-  }}
+  });
+}}

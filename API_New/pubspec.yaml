@@ -48,6 +48,7 @@ dependencies:
   dots_indicator: ^3.0.0
   google_fonts: ^6.1.0
   js: ^0.6.3
+#  google_maps_flutter: ^2.4.0
 #  flutter_float_window: ^0.2.2
 
 

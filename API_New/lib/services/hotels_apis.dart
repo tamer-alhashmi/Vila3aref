@@ -27,6 +27,7 @@ class HotelsApi {
         reception: e['reception'],
         discount: e['discount'],
         description: e['description'],
+        city: e['city'],
         location: e['location'],
         starRate: e['starRate'],
         roomRate: e['roomRate'],
