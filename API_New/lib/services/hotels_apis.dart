@@ -29,6 +29,8 @@ class HotelsApi {
         description: e['description'],
         city: e['city'],
         location: e['location'],
+        lat: e['lat'],
+        lng: e['lng'],
         starRate: e['starRate'],
         roomRate: e['roomRate'],
         id: e['id'],
@@ -36,7 +38,7 @@ class HotelsApi {
         images: List<String>.from(e["images"].map((x) => x)),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
-        // amenities: e['categories']["amenities"],
+        amenities: e['categories']["amenities"],
       );
     }).toList();
     return hotels;

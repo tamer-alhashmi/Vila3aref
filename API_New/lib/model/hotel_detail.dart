@@ -79,7 +79,6 @@ class _HotelDetailState extends State<HotelDetail> {
           style: TextStyle(
             color: Colors.white,
             letterSpacing: 1.7,
-            // fontFamily: 'Kalnia',
           ),
         ),
         centerTitle: true,
@@ -102,8 +101,8 @@ class _HotelDetailState extends State<HotelDetail> {
           bottomRight: Radius.circular(6),
         )),
       ),
-        // bottomNavigationBar: const CustomBottomBar(
-        //     bottomAppBar: BottomAppBar()),
+        bottomNavigationBar: const CustomBottomBar(
+            bottomAppBar: BottomAppBar()),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
@@ -265,69 +264,7 @@ class _HotelDetailState extends State<HotelDetail> {
                   });
                 },
               ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
-              DateSelectionWidget(
-                hotel: widget.hotel,
-                onDatesSelected: (checkInDate, checkOutDate, nights) {
-                  // Calculate nights here
-                  setState(() {
-                    _nights = nights;
-                  });
-                },
-              ),
+
               RoomsAndGuestsSelector(
                 onSelectionChanged: (rooms , adults, children) {
                   setState(() {
@@ -337,9 +274,12 @@ class _HotelDetailState extends State<HotelDetail> {
                   });
                 }, hotel: widget.hotel,
               ),
-              HotelMap(
+              HotelMapLocation(
                 hotel: widget.hotel,
-              )
+              ),
+
+
+
             ]),
         ),
       ),

@@ -3,21 +3,17 @@ import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'hotel.dart';
 
-class HotelMap extends StatelessWidget {
-  const HotelMap({super.key, required this.hotel});
-
+class HotelMapLocation extends StatelessWidget {
+  const HotelMapLocation({super.key, required this.hotel});
   final Hotel hotel;
-
-  get name => hotel.name.toUpperCase();
+  get name => hotel.name;
 
   @override
   Widget build(BuildContext context) {
     String location = hotel.location;
     String city = hotel.city;
-
     // Assuming you have a LatLng for the hotel location, replace LatLng(0, 0) with the actual coordinates.
-    LatLng hotelLatLng = const LatLng(50.82323169056676, -0.14789288460772423);
-
+    LatLng hotelLatLng =  LatLng(hotel.lat, hotel.lng);
     return Column(
       children: [
          Padding(

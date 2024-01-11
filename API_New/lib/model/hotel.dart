@@ -1,5 +1,6 @@
 
 import 'dart:convert';
+import 'dart:ffi';
 // import 'package:api_new/model/hotel_categories.dart';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
@@ -40,6 +41,8 @@ class Hotel {
   final String description;
   final String city;
   final String location;
+  final double  lat;
+  final double  lng;
   final String starRate;
   final String roomRate;
   final int id;
@@ -47,15 +50,17 @@ class Hotel {
   final List<String> images; // Change to List<String>
   // final Categories categories;
   // final LikeDislike likeDislike;
-  // final Amenity amenities;
+  final Amenity amenities;
   Hotel(
        {
         required this.name,
         required this.reception,
         required this.discount,
         required this.description,
-        required this.location,
          required this.city,
+        required this.location,
+         required this.lat,
+         required this.lng,
         required this.starRate,
         required this.roomRate,
         required this.id,
@@ -63,7 +68,7 @@ class Hotel {
         required this.images,
     // required this.categories,
     // required this.likeDislike,
-    // required this.amenities,
+        required this.amenities,
   });
   // Hotel copyWith({
   //   String? name,
@@ -102,6 +107,8 @@ class Hotel {
       discount: json['discount'],
       description: json['description'],
       location: json['location'],
+      lat: json['lat'],
+      lng: json['lng'],
       city: json['city'],
       starRate: json['starRate'],
       roomRate: json['roomRate'],
@@ -109,7 +116,8 @@ class Hotel {
       profilePicture: json['profilePicture'],
       images: json['images'] != null
           ? List<String>.from(json['images'].map((x) => x))
-          : [], // Check for null before mapping
+          : [],
+      amenities: json['amenities']// Check for null before mapping
     );
   }
   Map<String, dynamic> toJson() => {
@@ -120,12 +128,15 @@ class Hotel {
         "discount": discount,
         "description": description,
         "location": location,
-    "city": city,
+        "lat": lat,
+        "lng": lng,
+        "city": city,
         "starRate": starRate,
         "roomRate": roomRate,
         "profilePicture": profilePicture,
         // "categories": categories.toString(),
         // "likeDislike": likeDislike,
+        "amenities": amenities,
       };
 }
 

@@ -127,8 +127,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       print('Building hotel item $index');
                       final hotel = hotels[index];
                       var name = hotel.name;
-                      final id = hotel.id;
-                      final description = hotel.description;
                       // final reception = hotel.reception;
                       final location = hotel.location;
                       final roomRate = hotel.roomRate;
@@ -136,14 +134,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       final profilePicture = hotel.profilePicture;
                       final redHeartPathIcon = getRedHeartSVGPath();
                       final starRateIcon = getStarRateSVGPath();
-                      final arrowIcon = getArrowSVGPath();
-                      final blueHearIcon = getBlueHeartSVGPath();
-                      final coffeeIcon = getCoffeeSVGPath();
-                      final locationIcon = getLocationSVGPath();
-                      final moreIcon = getMoreSVGPath();
-                      final wifiIcon = getWifiSVGPath();
-                      // String roomRateValue =
-                      //     double.parse(roomRate) as String;
 
                       return Container(
                         margin: const EdgeInsets.only(top: 10, bottom: 10),
