@@ -20,10 +20,20 @@ class HotelMap extends StatelessWidget {
 
     return Column(
       children: [
-         Text(
-          '$name HOTEL location',
-          style: const TextStyle(fontSize: 16),
-        ),
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Row(
+             mainAxisAlignment: MainAxisAlignment.start,
+             crossAxisAlignment: CrossAxisAlignment.center,
+             children: [
+               Text(
+                '$name Hotel location',
+                style: const TextStyle(fontSize: 14),
+                 textAlign: TextAlign.left,
+                       ),
+             ],
+           ),
+         ),
         SizedBox(
           height: 320, // Specify the desired height for the map
           child: GoogleMap(
