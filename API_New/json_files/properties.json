@@ -54,7 +54,7 @@
           "personNumber": 2,
           "catname": "Deluxe Double Room Ensuite",
           "categorydescreption": "DeluxeDoubleRoomEnsuite has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also, Free WiFi is Available in all rooms and Public Areas.",
-          "roomsize": "15/MSQ, 161/FTSQ",
+          "roomsize": "15/MSQ, 161/FTSQ"
         },
         "FamilyRoomDeluxeEnsuite_kitchenette": {
           "personNumber": 5,
@@ -66,7 +66,7 @@
           "personNumber": 3,
           "catname": "Triple Room Deluxe Ensuite",
           "categorydescreption": "Triple room-Deluxe-Ensuite, Has an En-Suite bathroom with towels and toiletries, a TV, and tea and coffee facilities. Keys are provided allowing access to the guest house at all times. also a Free WiFi is Available in all rooms and Public Areas.",
-          "roomsize": "20/MSQ, 215/FTSQ",
+          "roomsize": "20/MSQ, 215/FTSQ"
         },
         "StandardDoubleRoomEnsuite": {
           "personNumber": 2,
@@ -87,8 +87,7 @@
         "userAction": 3
       }
     },
-    {
-      "name": "Malvern",
+    {"name": "Malvern",
       "id": 2120,
       "reception": "manned",
       "discount": 10,
