@@ -2,7 +2,7 @@
 // import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'home.dart';
 
@@ -11,7 +11,9 @@ void main() {
 }
 
 class ApiNew extends StatelessWidget {
-  const ApiNew({super.key});
+  const ApiNew({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,6 @@ class ApiNew extends StatelessWidget {
         debugShowCheckedModeBanner: false, // Set this to false
         theme: AppTheme.lightTheme,
         themeMode: ThemeMode.light,
-        home:  HomeScreen());
+        home: HomeScreen());
   }
 }

@@ -1,10 +1,10 @@
-
 import 'dart:convert';
 import 'dart:ffi';
 // import 'package:api_new/model/hotel_categories.dart';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/icons.dart';
+
 //
 Properties propertiesFromJson(String str) =>
     Properties.fromJson(json.decode(str));
@@ -41,8 +41,8 @@ class Hotel {
   final String description;
   final String city;
   final String location;
-  final double  lat;
-  final double  lng;
+  final double lat;
+  final double lng;
   final String starRate;
   final String roomRate;
   final int id;
@@ -50,25 +50,24 @@ class Hotel {
   final List<String> images; // Change to List<String>
   // final Categories categories;
   // final LikeDislike likeDislike;
-  final Amenity amenities;
-  Hotel(
-       {
-        required this.name,
-        required this.reception,
-        required this.discount,
-        required this.description,
-         required this.city,
-        required this.location,
-         required this.lat,
-         required this.lng,
-        required this.starRate,
-        required this.roomRate,
-        required this.id,
-        required this.profilePicture,
-        required this.images,
+  final List<String> amenities;
+  Hotel({
+    required this.name,
+    required this.reception,
+    required this.discount,
+    required this.description,
+    required this.city,
+    required this.location,
+    required this.lat,
+    required this.lng,
+    required this.starRate,
+    required this.roomRate,
+    required this.id,
+    required this.profilePicture,
+    required this.images,
+    required this.amenities,
     // required this.categories,
     // required this.likeDislike,
-        required this.amenities,
   });
   // Hotel copyWith({
   //   String? name,
@@ -117,11 +116,12 @@ class Hotel {
       images: json['images'] != null
           ? List<String>.from(json['images'].map((x) => x))
           : [],
-      amenities: json['amenities']// Check for null before mapping
+      amenities: json['amenities'] != null
+          ? List<String>.from(json['amenities'].map((x) => x))
+          : [], // Check for null before mapping
     );
   }
   Map<String, dynamic> toJson() => {
-        "images": List<String>.from(images.map((x) => x)),
         "name": name,
         "id": id,
         "reception": reception,
@@ -134,9 +134,10 @@ class Hotel {
         "starRate": starRate,
         "roomRate": roomRate,
         "profilePicture": profilePicture,
+        "images": List<String>.from(images.map((x) => x)),
+        "amenities": List<String>.from(amenities.map((x) => x)),
         // "categories": categories.toString(),
         // "likeDislike": likeDislike,
-        "amenities": amenities,
       };
 }
 
@@ -147,6 +148,7 @@ enum Roomsize {
   THE_20_MSQ_215_FTSQ,
   THE_25_MSQ_269_FTSQ
 }
+
 final roomsizeValues = EnumValues({
   "11/MSQ, 118/FTSQ": Roomsize.THE_11_MSQ_118_FTSQ,
   "13/MSQ, 140/FTSQ": Roomsize.THE_13_MSQ_140_FTSQ,
@@ -154,10 +156,11 @@ final roomsizeValues = EnumValues({
   "20/MSQ, 215/FTSQ": Roomsize.THE_20_MSQ_215_FTSQ,
   "25/MSQ, 269/FTSQ": Roomsize.THE_25_MSQ_269_FTSQ
 });
+
 enum Reception { Manned, Unmanned }
+
 final receptionValues =
     EnumValues({"manned": Reception.Manned, "unmanned": Reception.Unmanned});
-
 
 class HotelIcons {
   String get redHeartIcon => getRedHeartSVGPath();
@@ -169,8 +172,3 @@ class HotelIcons {
   String get moreIcon => getMoreSVGPath();
   String get wifiIcon => getWifiSVGPath();
 }
-
-
-
-
-

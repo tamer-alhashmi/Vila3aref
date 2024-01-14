@@ -12,7 +12,9 @@ import 'package:flutter_svg/svg.dart';
 class HomeScreen extends StatefulWidget {
   final ScrollController scrollController = ScrollController();
 
-  HomeScreen({super.key});
+  HomeScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -55,35 +57,35 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
         backgroundColor: AppTheme.lightPrimaryColor,
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-                padding: const EdgeInsets.all(0),
-                child: Container(
-                  color: Colors.blue,
-                  child: const Column(
-                    children: [Text('H&H Hotel')],
-                  ),
-                )),
-            ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Home'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.shopping_cart),
-              title: const Text('Shop'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.favorite),
-              title: const Text('Favorite'),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
+      // drawer: Drawer(
+      //   child: ListView(
+      //     children: [
+      //       DrawerHeader(
+      //           padding: const EdgeInsets.all(0),
+      //           child: Container(
+      //             color: Colors.blue,
+      //             child: const Column(
+      //               children: [Text('H&H Hotel')],
+      //             ),
+      //           )),
+      //       ListTile(
+      //         leading: const Icon(Icons.home),
+      //         title: const Text('Home'),
+      //         onTap: () {},
+      //       ),
+      //       ListTile(
+      //         leading: const Icon(Icons.shopping_cart),
+      //         title: const Text('Shop'),
+      //         onTap: () {},
+      //       ),
+      //       ListTile(
+      //         leading: const Icon(Icons.favorite),
+      //         title: const Text('Favorite'),
+      //         onTap: () {},
+      //       ),
+      //     ],
+      //   ),
+      // ),
       bottomNavigationBar: const CustomBottomBar(
           bottomAppBar: BottomAppBar()), //bottom Navigation Bar
       body: Visibility(
@@ -107,7 +109,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 16.0),
               // Add some spacing between text fields
-
               // Search by city
               Container(
                 child: TextField(
@@ -212,7 +213,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     mainAxisAlignment:
                                                         MainAxisAlignment.start,
                                                     crossAxisAlignment:
-                                                        CrossAxisAlignment.center,
+                                                        CrossAxisAlignment
+                                                            .center,
                                                     children: [
                                                       Container(
                                                           width: 20,
@@ -221,12 +223,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                               Clip.antiAlias,
                                                           decoration:
                                                               const BoxDecoration(),
-                                                          child: Stack(children: [
-                                                            SvgPicture.asset(
-                                                                redHeartPathIcon,
-                                                                semanticsLabel:
-                                                                    'A redHear')
-                                                          ])),
+                                                          child: Stack(
+                                                              children: [
+                                                                SvgPicture.asset(
+                                                                    redHeartPathIcon,
+                                                                    semanticsLabel:
+                                                                        'A redHear')
+                                                              ])),
                                                     ],
                                                   ),
                                                 ),
@@ -260,7 +263,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
@@ -279,7 +283,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 style: const TextStyle(
                                                   color: Color(0xFF0F0F0F),
                                                   fontSize: 14,
-                                                  fontFamily: 'Plus Jakarta Sans',
+                                                  fontFamily:
+                                                      'Plus Jakarta Sans',
                                                   fontWeight: FontWeight.w700,
                                                   height: 1,
                                                 ),
@@ -295,7 +300,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   Container(
                                                     width: 20,
                                                     height: 20,
-                                                    clipBehavior: Clip.antiAlias,
+                                                    clipBehavior:
+                                                        Clip.antiAlias,
                                                     decoration:
                                                         const BoxDecoration(),
                                                     child: Stack(children: [
@@ -311,7 +317,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     style: const TextStyle(
                                                       color: Color(0xFF0F0F0F),
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w700,
+                                                      fontWeight:
+                                                          FontWeight.w700,
                                                       height: 0.12,
                                                     ),
                                                   ),
@@ -340,18 +347,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                           padding: const EdgeInsets.only(
                                               top: 8, bottom: 8),
                                           child: Container(
-                                            margin: const EdgeInsets.only(top: 5),
+                                            margin:
+                                                const EdgeInsets.only(top: 5),
                                             width: double.infinity,
                                             child: Text.rich(
                                               TextSpan(
                                                 children: [
                                                   TextSpan(
-                                                    text:
-                                                        '£$roomRate',
+                                                    text: '£$roomRate',
                                                     style: const TextStyle(
                                                       color: Color(0xFF4C4DDC),
                                                       fontSize: 14,
-                                                      fontWeight: FontWeight.w700,
+                                                      fontWeight:
+                                                          FontWeight.w700,
                                                       height: 0.11,
                                                     ),
                                                   ),
@@ -362,7 +370,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       fontSize: 12,
                                                       fontFamily:
                                                           'Plus Jakarta Sans',
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       height: 0.12,
                                                     ),
                                                   ),

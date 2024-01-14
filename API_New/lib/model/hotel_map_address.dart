@@ -4,7 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'hotel.dart';
 
 class HotelMapLocation extends StatelessWidget {
-  const HotelMapLocation({super.key, required this.hotel});
+  const HotelMapLocation({Key? key, required this.hotel}) : super(key: key);
   final Hotel hotel;
   get name => hotel.name;
 
@@ -13,25 +13,25 @@ class HotelMapLocation extends StatelessWidget {
     String location = hotel.location;
     String city = hotel.city;
     // Assuming you have a LatLng for the hotel location, replace LatLng(0, 0) with the actual coordinates.
-    LatLng hotelLatLng =  LatLng(hotel.lat, hotel.lng);
+    LatLng hotelLatLng = LatLng(hotel.lat, hotel.lng);
     return Column(
       children: [
-         Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Row(
-             mainAxisAlignment: MainAxisAlignment.start,
-             crossAxisAlignment: CrossAxisAlignment.center,
-             children: [
-               Text(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
                 '$name Hotel location',
                 style: const TextStyle(fontSize: 14),
-                 textAlign: TextAlign.left,
-                       ),
-             ],
-           ),
-         ),
+                textAlign: TextAlign.left,
+              ),
+            ],
+          ),
+        ),
         SizedBox(
-          height: 320, // Specify the desired height for the map
+          height: 280, // Specify the desired height for the map
           child: GoogleMap(
             initialCameraPosition: CameraPosition(
               target: hotelLatLng,
@@ -53,24 +53,6 @@ class HotelMapLocation extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import 'package:flutter/cupertino.dart';
 // import 'hotel.dart';
