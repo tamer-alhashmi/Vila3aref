@@ -5,6 +5,8 @@ import 'dart:ffi';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/icons.dart';
 
+import 'hotel_policies.dart';
+
 //
 Properties propertiesFromJson(String str) =>
     Properties.fromJson(json.decode(str));
@@ -51,6 +53,7 @@ class Hotel {
   // final Categories categories;
   // final LikeDislike likeDislike;
   final List<String> amenities;
+  final HotelPolicies policies;
   Hotel({
     required this.name,
     required this.reception,
@@ -66,6 +69,7 @@ class Hotel {
     required this.profilePicture,
     required this.images,
     required this.amenities,
+    required this.policies,
     // required this.categories,
     // required this.likeDislike,
   });
@@ -118,7 +122,9 @@ class Hotel {
           : [],
       amenities: json['amenities'] != null
           ? List<String>.from(json['amenities'].map((x) => x))
-          : [], // Check for null before mapping
+          : [],
+      policies: HotelPolicies.fromJson(
+          json['policies'] ?? {}), // Check for null before mapping
     );
   }
   Map<String, dynamic> toJson() => {
@@ -138,6 +144,7 @@ class Hotel {
         "amenities": List<String>.from(amenities.map((x) => x)),
         // "categories": categories.toString(),
         // "likeDislike": likeDislike,
+        "policies": policies.toJson(),
       };
 }
 

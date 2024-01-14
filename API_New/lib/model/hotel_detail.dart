@@ -15,6 +15,7 @@ import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
 import 'amenities.dart';
 import 'bottom_navigate_bar.dart';
 import 'hotel_description_mini.dart';
+import 'hotel_policies_mini_card.dart';
 
 class HotelDetail extends StatefulWidget {
   HotelDetail({Key? key, required this.hotel}) : super(key: key);
@@ -293,7 +294,10 @@ class _HotelDetailState extends State<HotelDetail> {
               description: widget.hotel.description,
               hotel: widget.hotel,
             ),
-            PoliciesMiniCard()
+            PoliciesMiniCard(
+              policies: widget.hotel.policies,
+              hotel: widget.hotel,
+            ),
 
             // HotelAmenities(
             //   hotel: widget.hotel,

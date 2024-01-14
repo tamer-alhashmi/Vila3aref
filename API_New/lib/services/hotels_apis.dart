@@ -1,9 +1,11 @@
 import 'dart:convert';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_likeDislike.dart';
+import 'package:api_new/model/hotel_policies.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import '../model/hotel.dart';
+import 'nearby_places.dart';
 
 class HotelsApi {
   static Future<List<Hotel>> fetchHotel() async {
@@ -36,6 +38,7 @@ class HotelsApi {
         profilePicture: e['profilePicture'],
         images: List<String>.from(e["images"].map((x) => x)),
         amenities: List<String>.from(e["amenities"].map((x) => x)),
+        policies: HotelPolicies.fromJson(e['policies'] ?? {}),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
       );
@@ -44,6 +47,35 @@ class HotelsApi {
     // ignore: dead_code
     if (kDebugMode) {
       print('FetchUser Completed');
+    }
+  }
+
+  static Future<List<Place>> fetchNearbyPlaces(
+      double latitude, double longitude) async {
+    const apiKey = 'AIzaSyC669bNf39Uaq3R3Ns8Wol7RaynIO-_n94';
+    const radius = 1000; // Example radius in meters
+    const placeType = 'restaurant'; // Example place type
+
+    final url = Uri.parse(
+        'https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
+        '&location=$latitude,$longitude'
+        '&radius=$radius'
+        '&types=$placeType'
+        '&key=$apiKey');
+    final response = await http.get(url);
+    if (response.statusCode == 200) {
+      final decodeDate = json.decode(response.body);
+      final places = (decodeDate['results'] as List<dynamic>).map((placeData) {
+        return Place(
+          name: placeData['name'],
+          latitude: placeData['lat'],
+          longitude: placeData['lng'],
+          address: '',
+        );
+      }).toList();
+      return places;
+    } else {
+      throw Exception('Failed to load nearby places');
     }
   }
 }

@@ -1,5 +1,4 @@
 import 'package:api_new/model/hotel.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionMiniCard extends StatelessWidget {
