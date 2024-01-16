@@ -17,6 +17,8 @@ class HotelsApi {
     final uri = Uri.parse(url);
     final response = await http.get(uri);
     final body = response.body;
+    print('Raw JSON data: $body');
+
     final json = jsonDecode(body);
     final hotel = json['hotel'] as List<dynamic>;
     if (kDebugMode) {

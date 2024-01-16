@@ -88,10 +88,10 @@ class HotelPolicies {
 
   factory HotelPolicies.fromJson(Map<String, dynamic> json) {
     return HotelPolicies(
-      checkIn: json['Check in'] ?? '',
-      checkOut: json['Check out'] ?? '',
-      accommodationType: json['Accommodation Type'] ?? '',
-      petPolicy: json['Pet Policy'] ?? '',
+      checkIn: json['Check in']?.toString() ?? 'N/A',
+      checkOut: json['Check out']?.toString() ?? 'N/A',
+      accommodationType: json['Accommodation Type']?.toString() ?? 'N/A',
+      petPolicy: json['Pet Policy']?.toString() ?? 'N/A',
     );
   }
 
