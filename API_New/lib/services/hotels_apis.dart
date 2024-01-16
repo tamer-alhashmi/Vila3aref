@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_likeDislike.dart';
-import 'package:api_new/model/hotel_policies.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import '../model/hotel.dart';
+import '../model/hotel_policies.dart';
 import 'nearby_places.dart';
 
 class HotelsApi {
@@ -29,7 +29,7 @@ class HotelsApi {
         discount: e['discount'],
         description: e['description'],
         city: e['city'],
-        location: e['location'],
+        address: e['address'],
         lat: e['lat'],
         lng: e['lng'],
         starRate: e['starRate'],
@@ -39,6 +39,7 @@ class HotelsApi {
         images: List<String>.from(e["images"].map((x) => x)),
         amenities: List<String>.from(e["amenities"].map((x) => x)),
         policies: HotelPolicies.fromJson(e['policies'] ?? {}),
+        // policies: .fromJson(e['policies'] ?? {}),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
       );

@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       final hotel = hotels[index];
                       var name = hotel.name;
                       // final reception = hotel.reception;
-                      final location = hotel.location;
+                      final location = hotel.address;
                       final roomRate = hotel.roomRate;
                       final starRate = hotel.starRate;
                       final profilePicture = hotel.profilePicture;

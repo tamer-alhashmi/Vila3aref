@@ -1,5 +1,5 @@
-import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_map_address.dart';
+import 'package:api_new/model/hotel_policies.dart';
 import 'package:api_new/model/reviews_box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/scrollup.dart';
@@ -10,12 +10,9 @@ import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
 import 'dart:async';
 import 'package:api_new/model/hotel.dart';
 import 'package:flutter/material.dart';
-import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
-
 import 'amenities.dart';
 import 'bottom_navigate_bar.dart';
 import 'hotel_description_mini.dart';
-import 'hotel_policies_mini_card.dart';
 
 class HotelDetail extends StatefulWidget {
   HotelDetail({Key? key, required this.hotel}) : super(key: key);
@@ -71,7 +68,7 @@ class _HotelDetailState extends State<HotelDetail> {
     int id = widget.hotel.id;
     int discount = widget.hotel.discount;
     String description = widget.hotel.description;
-    String location = widget.hotel.location;
+    String address = widget.hotel.address;
     String city = widget.hotel.city;
     String starRate = widget.hotel.starRate;
     String roomRate = widget.hotel.roomRate;
@@ -114,7 +111,8 @@ class _HotelDetailState extends State<HotelDetail> {
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           controller: scrollController,
-          child: Column(children: [
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -294,15 +292,8 @@ class _HotelDetailState extends State<HotelDetail> {
               description: widget.hotel.description,
               hotel: widget.hotel,
             ),
-            PoliciesMiniCard(
-              policies: widget.hotel.policies,
-              hotel: widget.hotel,
-            ),
-
-            // HotelAmenities(
-            //   hotel: widget.hotel,
-            //   amenities: const [],
-            // ),
+            HotelPoliciesWidget(policies: widget.hotel.policies.toJson()),
+            // Policies list here
           ]),
         ),
       ),

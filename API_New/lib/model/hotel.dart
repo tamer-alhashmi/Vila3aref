@@ -1,11 +1,10 @@
 import 'dart:convert';
-import 'dart:ffi';
+import 'dart:core';
 // import 'package:api_new/model/hotel_categories.dart';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/icons.dart';
-
-import 'hotel_policies.dart';
+import 'package:api_new/model/hotel_policies.dart';
 
 //
 Properties propertiesFromJson(String str) =>
@@ -42,7 +41,7 @@ class Hotel {
   final int discount;
   final String description;
   final String city;
-  final String location;
+  final String address;
   final double lat;
   final double lng;
   final String starRate;
@@ -60,7 +59,7 @@ class Hotel {
     required this.discount,
     required this.description,
     required this.city,
-    required this.location,
+    required this.address,
     required this.lat,
     required this.lng,
     required this.starRate,
@@ -73,35 +72,6 @@ class Hotel {
     // required this.categories,
     // required this.likeDislike,
   });
-  // Hotel copyWith({
-  //   String? name,
-  //   int? id,
-  //   String? reception,
-  //   int? discount,
-  //   String? description,
-  //   String? location,
-  //   String? starRate,
-  //   String? roomRate,
-  //   String? profilePicture,
-  //   List<String>? images,
-  //   // Categories? categories,
-  //   // LikeDislike? likeDislike
-  // }) =>
-  //     Hotel(
-  //       name: name ?? this.name,
-  //       id: id ?? this.id,
-  //       reception: reception ?? this.reception,
-  //       discount: discount ?? this.discount,
-  //       description: description ?? this.description,
-  //       location: location ?? this.location,
-  //       starRate: starRate ?? this.starRate,
-  //       roomRate: roomRate ?? this.roomRate,
-  //       profilePicture: profilePicture ?? this.profilePicture,
-  //       images: images ?? this.images,
-  //       // categories: categories ?? this.categories,
-  //       // likeDislike: likeDislike ?? this.likeDislike,
-  //       // amenities: amenities,
-  //     );
 
   factory Hotel.fromJson(Map<String, dynamic> json) {
     return Hotel(
@@ -109,7 +79,7 @@ class Hotel {
       reception: json['reception'],
       discount: json['discount'],
       description: json['description'],
-      location: json['location'],
+      address: json['address'],
       lat: json['lat'],
       lng: json['lng'],
       city: json['city'],
@@ -123,8 +93,8 @@ class Hotel {
       amenities: json['amenities'] != null
           ? List<String>.from(json['amenities'].map((x) => x))
           : [],
-      policies: HotelPolicies.fromJson(
-          json['policies'] ?? {}), // Check for null before mapping
+      policies: HotelPolicies.fromJson(json['policies'] ?? {}),
+      // policies: HotelPolicies.fromJson(json['policies'] ?? {}),
     );
   }
   Map<String, dynamic> toJson() => {
@@ -133,7 +103,7 @@ class Hotel {
         "reception": reception,
         "discount": discount,
         "description": description,
-        "location": location,
+        "address": address,
         "lat": lat,
         "lng": lng,
         "city": city,
@@ -142,9 +112,9 @@ class Hotel {
         "profilePicture": profilePicture,
         "images": List<String>.from(images.map((x) => x)),
         "amenities": List<String>.from(amenities.map((x) => x)),
+        "policies": policies.toJson(),
         // "categories": categories.toString(),
         // "likeDislike": likeDislike,
-        "policies": policies.toJson(),
       };
 }
 

@@ -10,7 +10,7 @@ class HotelMapLocation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String location = hotel.location;
+    String location = hotel.address;
     String city = hotel.city;
     // Assuming you have a LatLng for the hotel location, replace LatLng(0, 0) with the actual coordinates.
     LatLng hotelLatLng = LatLng(hotel.lat, hotel.lng);
