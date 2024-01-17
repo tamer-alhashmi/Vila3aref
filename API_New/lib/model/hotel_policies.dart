@@ -1,36 +1,49 @@
+import 'package:api_new/model/hotel.dart';
 import 'package:flutter/material.dart';
 
-class HotelPoliciesWidget extends StatelessWidget {
-  final Map<String, dynamic> policies;
+import '../theme/app_theme.dart';
+// import 'hotel_categories.dart';
 
-  const HotelPoliciesWidget({Key? key, required this.policies})
+class HotelPolicies extends StatelessWidget {
+  final List<String> policies;
+  final Hotel hotel;
+
+  const HotelPolicies({Key? key, required this.policies, required this.hotel})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         const Text(
-          'Policies:',
+          'Most Popular Facilities:',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
-        const SizedBox(height: 8),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: policies.entries.map((entry) {
-            final key = entry.key;
-            final value = entry.value?.toString() ?? 'N/A';
-            print('Key: $key, Value: $value'); // Add this line
+        Wrap(
+          direction: Axis.horizontal,
+          children: hotel.policies.map((amenity) {
             return Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Text('$key: $value'),
+              padding: const EdgeInsets.all(4.0),
+              child: Chip(
+                label: Text(amenity),
+                labelStyle: const TextStyle(
+                  fontSize: 14, // Customize text size
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(10.0), // Customize border radius
+                  side: const BorderSide(
+                    color: AppTheme
+                        .buiColorCtaBackground, // Customize border color
+                    width: 0.5, // Customize border width
+                  ),
+                ),
+              ),
             );
           }).toList(),
         ),
@@ -39,66 +52,43 @@ class HotelPoliciesWidget extends StatelessWidget {
   }
 }
 
-// class HotelPoliciesWidget extends StatelessWidget {
-//   final Map<String, dynamic> policies;
+// class HotelPolicies {
+//   final String checkIn;
+//   final String checkOut;
+//   final String accommodationType;
+//   final String petPolicy;
 //
-//   const HotelPoliciesWidget({Key? key, required this.policies})
-//       : super(key: key);
+//   HotelPolicies({
+//     required this.checkIn,
+//     required this.checkOut,
+//     required this.accommodationType,
+//     required this.petPolicy,
+//   });
 //
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       crossAxisAlignment: CrossAxisAlignment.start,
-//       children: [
-//         const Text(
-//           'Policies:',
-//           style: TextStyle(
-//             fontSize: 18,
-//             fontWeight: FontWeight.bold,
-//           ),
-//         ),
-//         const SizedBox(height: 8),
-//         Column(
-//           crossAxisAlignment: CrossAxisAlignment.start,
-//           children: policies.entries.map((entry) {
-//             return Padding(
-//               padding: const EdgeInsets.only(bottom: 4),
-//               child: Text(
-//                   '${entry.key}: ${entry.value.toString()}'), // Display both key and value
-//             );
-//           }).toList(),
-//         ),
-//       ],
-//     );
+//   factory HotelPolicies.fromJson(Map<String, dynamic> json) => HotelPolicies(
+//         checkIn: json["Check in"],
+//         checkOut: json["Check out"],
+//         accommodationType: json["Accommodation Type"],
+//         petPolicy: json["Pet Policy"],
+//       );
+//
+//   Map<String, String> asMap() {
+//     return {
+//       'Check in': checkIn,
+//       'Check out': checkOut,
+//       "Accommodation Type": accommodationType,
+//       "Pet Policy": petPolicy,
+//       // ... map other policy properties ...
+//     };
+//   }
+//
+//   Map<String, String> map() {
+//     return {
+//       'Check in': checkIn,
+//       'Check out': checkOut,
+//       "Accommodation Type": accommodationType,
+//       "Pet Policy": petPolicy,
+//       // ... map other policy properties ...
+//     };
 //   }
 // }
-
-class HotelPolicies {
-  final String checkIn;
-  final String checkOut;
-  final String accommodationType;
-  final String petPolicy;
-
-  HotelPolicies({
-    required this.checkIn,
-    required this.checkOut,
-    required this.accommodationType,
-    required this.petPolicy,
-  });
-
-  factory HotelPolicies.fromJson(Map<String, dynamic> json) {
-    return HotelPolicies(
-      checkIn: json['Check in']?.toString() ?? 'N/A',
-      checkOut: json['Check out']?.toString() ?? 'N/A',
-      accommodationType: json['Accommodation Type']?.toString() ?? 'N/A',
-      petPolicy: json['Pet Policy']?.toString() ?? 'N/A',
-    );
-  }
-
-  Map<String, dynamic> toJson() => {
-        "Check in": checkIn,
-        "Check out": checkOut,
-        "Accommodation Type": accommodationType,
-        "Pet Policy": petPolicy,
-      };
-}

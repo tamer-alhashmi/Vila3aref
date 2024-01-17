@@ -23,12 +23,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -116,12 +116,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
 
       "amenities": [
         "Free WiFi Internet",
@@ -210,12 +210,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -303,12 +303,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -396,12 +396,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -489,12 +489,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -582,12 +582,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -675,12 +675,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -768,12 +768,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -861,12 +861,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -954,12 +954,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -1047,12 +1047,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -1140,12 +1140,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -1233,12 +1233,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",
@@ -1326,12 +1326,12 @@
         "6.jpg",
         "7.jpg"
       ],
-      "policies ": {
-        "Check in": "3:00 pm - 11:00 pm",
-        "Check out": "11:00 am",
-        "Accommodation Type": "Bed and Breakfast",
-        "Pet Policy": "N/A"
-      },
+      "policies ": [
+        "Check in: 3:00 pm - 11:00 pm",
+      "Check out: 11:00 am",
+      "Accommodation Type: Bed and Breakfast",
+      "Pet Policy: N/A"
+      ],
       "amenities": [
         "Free WiFi Internet",
         "Non-smoking",

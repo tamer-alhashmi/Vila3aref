@@ -1,5 +1,4 @@
 import 'package:api_new/model/hotel_map_address.dart';
-import 'package:api_new/model/hotel_policies.dart';
 import 'package:api_new/model/reviews_box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/scrollup.dart';
@@ -13,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'amenities.dart';
 import 'bottom_navigate_bar.dart';
 import 'hotel_description_mini.dart';
+import 'hotel_policies.dart';
+import 'hotel_policy_widget.dart';
 
 class HotelDetail extends StatefulWidget {
   HotelDetail({Key? key, required this.hotel}) : super(key: key);
@@ -292,7 +293,10 @@ class _HotelDetailState extends State<HotelDetail> {
               description: widget.hotel.description,
               hotel: widget.hotel,
             ),
-            HotelPoliciesWidget(policies: widget.hotel.policies.toJson()),
+            HotelPolicies(
+              policies: widget.hotel.policies,
+              hotel: widget.hotel,
+            ),
             // Policies list here
           ]),
         ),

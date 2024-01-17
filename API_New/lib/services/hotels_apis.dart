@@ -40,7 +40,8 @@ class HotelsApi {
         profilePicture: e['profilePicture'],
         images: List<String>.from(e["images"].map((x) => x)),
         amenities: List<String>.from(e["amenities"].map((x) => x)),
-        policies: HotelPolicies.fromJson(e['policies'] ?? {}),
+        policies: List<String>.from(e["policies"].map((x) => x)),
+        // policies: HotelPolicies.fromJson(e['policies'] ?? {}),
         // policies: .fromJson(e['policies'] ?? {}),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>

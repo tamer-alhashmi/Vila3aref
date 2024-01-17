@@ -1,39 +1,37 @@
-import 'dart:convert';
 import 'dart:core';
 // import 'package:api_new/model/hotel_categories.dart';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/icons.dart';
-import 'package:api_new/model/hotel_policies.dart';
 
 //
-Properties propertiesFromJson(String str) =>
-    Properties.fromJson(json.decode(str));
-
-String propertiesToJson(Properties data) => json.encode(data.toJson());
-
-class Properties {
-  final List<Hotel> hotels;
-
-  Properties({
-    required this.hotels,
-  });
-
-  Properties copyWith({
-    List<Hotel>? hotels,
-  }) =>
-      Properties(
-        hotels: hotels ?? this.hotels,
-      );
-
-  factory Properties.fromJson(Map<String, dynamic> json) => Properties(
-        hotels: List<Hotel>.from(json["hotels"].map((x) => Hotel.fromJson(x))),
-      );
-
-  Map<String, dynamic> toJson() => {
-        "hotels": List<dynamic>.from(hotels.map((x) => x.toJson())),
-      };
-}
+// Properties propertiesFromJson(String str) =>
+//     Properties.fromJson(json.decode(str));
+//
+// String propertiesToJson(Properties data) => json.encode(data.toJson());
+//
+// class Properties {
+//   final List<Hotel> hotels;
+//
+//   Properties({
+//     required this.hotels,
+//   });
+//
+//   Properties copyWith({
+//     List<Hotel>? hotels,
+//   }) =>
+//       Properties(
+//         hotels: hotels ?? this.hotels,
+//       );
+//
+//   factory Properties.fromJson(Map<String, dynamic> json) => Properties(
+//         hotels: List<Hotel>.from(json["hotels"].map((x) => Hotel.fromJson(x))),
+//       );
+//
+//   Map<String, dynamic> toJson() => {
+//         "hotels": List<dynamic>.from(hotels.map((x) => x.toJson())),
+//       };
+// }
 
 class Hotel {
   final String name;
@@ -52,7 +50,8 @@ class Hotel {
   // final Categories categories;
   // final LikeDislike likeDislike;
   final List<String> amenities;
-  final HotelPolicies policies;
+  final List<String> policies;
+  // final HotelPolicies policies;
   Hotel({
     required this.name,
     required this.reception,
@@ -93,8 +92,11 @@ class Hotel {
       amenities: json['amenities'] != null
           ? List<String>.from(json['amenities'].map((x) => x))
           : [],
-      policies: HotelPolicies.fromJson(json['policies'] ?? {}),
-      // policies: HotelPolicies.fromJson(json['policies'] ?? {}),
+      policies: json['policies'] != null
+          ? List<String>.from(json['policies'].map((x) => x))
+          : [],
+      // policies: HotelPolicies.fromJson(json['policies'] ??
+      //     {}), // policies: HotelPolicies.fromJson(json['policies'] ?? {}),
     );
   }
   Map<String, dynamic> toJson() => {
@@ -112,7 +114,7 @@ class Hotel {
         "profilePicture": profilePicture,
         "images": List<String>.from(images.map((x) => x)),
         "amenities": List<String>.from(amenities.map((x) => x)),
-        "policies": policies.toJson(),
+        "policies": List<String>.from(policies.map((x) => x)),
         // "categories": categories.toString(),
         // "likeDislike": likeDislike,
       };
