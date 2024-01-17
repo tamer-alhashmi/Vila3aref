@@ -12,7 +12,6 @@ import 'package:flutter/material.dart';
 import 'amenities.dart';
 import 'bottom_navigate_bar.dart';
 import 'hotel_description_mini.dart';
-import 'hotel_policies.dart';
 import 'hotel_policy_widget.dart';
 
 class HotelDetail extends StatefulWidget {
@@ -293,9 +292,9 @@ class _HotelDetailState extends State<HotelDetail> {
               description: widget.hotel.description,
               hotel: widget.hotel,
             ),
-            HotelPolicies(
-              policies: widget.hotel.policies,
-              hotel: widget.hotel,
+            HotelPoliciesWidget(
+              policies: widget.hotel.policies, hotel: widget.hotel,
+              // hotel: widget.hotel,
             ),
             // Policies list here
           ]),

@@ -14,42 +14,45 @@ class HotelMapLocation extends StatelessWidget {
     String city = hotel.city;
     // Assuming you have a LatLng for the hotel location, replace LatLng(0, 0) with the actual coordinates.
     LatLng hotelLatLng = LatLng(hotel.lat, hotel.lng);
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                '$name Hotel location',
-                style: const TextStyle(fontSize: 14),
-                textAlign: TextAlign.left,
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 280, // Specify the desired height for the map
-          child: GoogleMap(
-            initialCameraPosition: CameraPosition(
-              target: hotelLatLng,
-              zoom: 14.0,
-            ),
-            markers: {
-              Marker(
-                markerId: const MarkerId('hotelMarker'),
-                position: hotelLatLng,
-                infoWindow: InfoWindow(
-                  title: '$city - $location',
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  '$name Hotel location',
+                  style: const TextStyle(fontSize: 14),
+                  textAlign: TextAlign.left,
                 ),
-              ),
-            },
+              ],
+            ),
           ),
-        ),
-        // Text('$city - $location'),
-      ],
+          SizedBox(
+            height: 280, // Specify the desired height for the map
+            child: GoogleMap(
+              initialCameraPosition: CameraPosition(
+                target: hotelLatLng,
+                zoom: 12.0,
+              ),
+              markers: {
+                Marker(
+                  markerId: const MarkerId('hotelMarker'),
+                  position: hotelLatLng,
+                  infoWindow: InfoWindow(
+                    title: '$city - $location',
+                  ),
+                ),
+              },
+            ),
+          ),
+          // Text('$city - $location'),
+        ],
+      ),
     );
   }
 }

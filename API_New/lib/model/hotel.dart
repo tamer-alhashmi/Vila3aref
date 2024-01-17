@@ -2,6 +2,7 @@ import 'dart:core';
 // import 'package:api_new/model/hotel_categories.dart';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
+import 'package:api_new/model/hotel_policies.dart';
 import 'package:api_new/model/icons.dart';
 
 //
@@ -50,8 +51,7 @@ class Hotel {
   // final Categories categories;
   // final LikeDislike likeDislike;
   final List<String> amenities;
-  final List<String> policies;
-  // final HotelPolicies policies;
+  final HotelPolicies policies;
   Hotel({
     required this.name,
     required this.reception,
@@ -92,9 +92,7 @@ class Hotel {
       amenities: json['amenities'] != null
           ? List<String>.from(json['amenities'].map((x) => x))
           : [],
-      policies: json['policies'] != null
-          ? List<String>.from(json['policies'].map((x) => x))
-          : [],
+      policies: HotelPolicies.fromJson(json['policies'] ?? {}),
       // policies: HotelPolicies.fromJson(json['policies'] ??
       //     {}), // policies: HotelPolicies.fromJson(json['policies'] ?? {}),
     );
@@ -114,8 +112,7 @@ class Hotel {
         "profilePicture": profilePicture,
         "images": List<String>.from(images.map((x) => x)),
         "amenities": List<String>.from(amenities.map((x) => x)),
-        "policies": List<String>.from(policies.map((x) => x)),
-        // "categories": categories.toString(),
+        "policies": policies, // "categories": categories.toString(),
         // "likeDislike": likeDislike,
       };
 }

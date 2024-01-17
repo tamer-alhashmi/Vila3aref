@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'package:api_new/model/hotel_categories.dart';
-import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import '../model/hotel.dart';
@@ -40,9 +38,7 @@ class HotelsApi {
         profilePicture: e['profilePicture'],
         images: List<String>.from(e["images"].map((x) => x)),
         amenities: List<String>.from(e["amenities"].map((x) => x)),
-        policies: List<String>.from(e["policies"].map((x) => x)),
-        // policies: HotelPolicies.fromJson(e['policies'] ?? {}),
-        // policies: .fromJson(e['policies'] ?? {}),
+        policies: HotelPolicies.fromJson(e['policies'] ?? {}),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
       );
