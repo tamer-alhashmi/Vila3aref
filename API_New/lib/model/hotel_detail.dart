@@ -1,8 +1,11 @@
 import 'package:api_new/model/hotel_map_address.dart';
+import 'package:api_new/model/hotel_nearby_places.dart';
 import 'package:api_new/model/reviews_box.dart';
 import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/scrollup.dart';
 import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
+import 'package:api_new/services/hotels_apis.dart';
+import 'package:api_new/services/nearby_places.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
@@ -51,6 +54,19 @@ class _HotelDetailState extends State<HotelDetail> {
         curve: Curves.easeInOut,
       );
     });
+    fetchNearbyPlaces(widget.hotel.lat, widget.hotel.lng);
+  }
+
+  Future<void> fetchNearbyPlaces(double latitude, double longitude) async {
+    try {
+      final nearbyPlaces =
+          await HotelsApi.fetchNearbyPlaces(latitude, longitude);
+      // Handle the list of nearby places as needed
+      print(nearbyPlaces);
+    } catch (e) {
+      // Handle errors
+      print('Error fetching nearby places: $e');
+    }
   }
 
   @override
@@ -75,6 +91,7 @@ class _HotelDetailState extends State<HotelDetail> {
     String profilePicture = widget.hotel.profilePicture;
     List<String> images = widget.hotel.images;
     List<String> amenities = widget.hotel.amenities;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -192,7 +209,7 @@ class _HotelDetailState extends State<HotelDetail> {
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 8.0),
+                  padding: const EdgeInsets.only(top: 10, bottom: 5),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -227,14 +244,21 @@ class _HotelDetailState extends State<HotelDetail> {
                     ],
                   ),
                 ), //10% Economic Discount
-                Row(
-                  children: [
-                    // Price for nights
-                    Text(
-                      'Price for ${_nights > 0 ? '$_nights nights' : '1 night'}, 2 adults',
-                    ),
-                  ],
-                ),
+                Padding(
+                  //Price for $_nights
+                  padding: const EdgeInsets.only(top: 10, bottom: 5),
+                  child: Row(
+                    children: [
+                      // Price for nights
+                      Text(
+                        'Price for ${_nights > 0 ? '$_nights nights' : '1 night'}, 2 adults',
+                        style: const TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ), //Price for ${_nights
                 Row(children: [
                   Text(
                       // Price after Discount
@@ -242,6 +266,7 @@ class _HotelDetailState extends State<HotelDetail> {
                           ? '£${_nights * double.parse(roomRate)}'
                           : '£${double.parse((roomRate))}',
                       style: const TextStyle(
+                          fontSize: 16,
                           color: Colors.red,
                           decoration: TextDecoration.lineThrough,
                           decorationColor:
@@ -296,7 +321,10 @@ class _HotelDetailState extends State<HotelDetail> {
               policies: widget.hotel.policies, hotel: widget.hotel,
               // hotel: widget.hotel,
             ),
-            // Policies list here
+            NearbyPlacesWidget(
+              nearbyPlaces: widget.hotel.nearbyPlaces,
+              hotel: widget.hotel,
+            ),
           ]),
         ),
       ),

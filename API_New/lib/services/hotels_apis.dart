@@ -39,6 +39,9 @@ class HotelsApi {
         images: List<String>.from(e["images"].map((x) => x)),
         amenities: List<String>.from(e["amenities"].map((x) => x)),
         policies: HotelPolicies.fromJson(e['policies'] ?? {}),
+        nearbyPlaces: (json['nearbyPlaces'] as List<dynamic>? ?? [])
+            .map((placeJson) => Place.fromJson(placeJson))
+            .toList(),
         // categories: e['categories'],
         // likeDislike: e['likeDislike'], // Convert to List<String>
       );
@@ -65,14 +68,19 @@ class HotelsApi {
     final response = await http.get(url);
     if (response.statusCode == 200) {
       final decodeDate = json.decode(response.body);
+      // final places = (decodeDate['results'] as List<dynamic>).map((placeData) {
+      //   return Place(
+      //     name: placeData['name'],
+      //     latitude: placeData['lat'],
+      //     longitude: placeData['lng'],
+      //     address: '',
+      //   );
+      // }).toList();
+
       final places = (decodeDate['results'] as List<dynamic>).map((placeData) {
-        return Place(
-          name: placeData['name'],
-          latitude: placeData['lat'],
-          longitude: placeData['lng'],
-          address: '',
-        );
+        return Place.fromJson(placeData);
       }).toList();
+
       return places;
     } else {
       throw Exception('Failed to load nearby places');

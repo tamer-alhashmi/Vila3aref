@@ -4,35 +4,7 @@ import 'dart:core';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_policies.dart';
 import 'package:api_new/model/icons.dart';
-
-//
-// Properties propertiesFromJson(String str) =>
-//     Properties.fromJson(json.decode(str));
-//
-// String propertiesToJson(Properties data) => json.encode(data.toJson());
-//
-// class Properties {
-//   final List<Hotel> hotels;
-//
-//   Properties({
-//     required this.hotels,
-//   });
-//
-//   Properties copyWith({
-//     List<Hotel>? hotels,
-//   }) =>
-//       Properties(
-//         hotels: hotels ?? this.hotels,
-//       );
-//
-//   factory Properties.fromJson(Map<String, dynamic> json) => Properties(
-//         hotels: List<Hotel>.from(json["hotels"].map((x) => Hotel.fromJson(x))),
-//       );
-//
-//   Map<String, dynamic> toJson() => {
-//         "hotels": List<dynamic>.from(hotels.map((x) => x.toJson())),
-//       };
-// }
+import 'package:api_new/services/nearby_places.dart';
 
 class Hotel {
   final String name;
@@ -52,6 +24,7 @@ class Hotel {
   // final LikeDislike likeDislike;
   final List<String> amenities;
   final HotelPolicies policies;
+  final List<Place> nearbyPlaces;
   Hotel({
     required this.name,
     required this.reception,
@@ -68,6 +41,7 @@ class Hotel {
     required this.images,
     required this.amenities,
     required this.policies,
+    required this.nearbyPlaces,
     // required this.categories,
     // required this.likeDislike,
   });
@@ -93,8 +67,7 @@ class Hotel {
           ? List<String>.from(json['amenities'].map((x) => x))
           : [],
       policies: HotelPolicies.fromJson(json['policies'] ?? {}),
-      // policies: HotelPolicies.fromJson(json['policies'] ??
-      //     {}), // policies: HotelPolicies.fromJson(json['policies'] ?? {}),
+      nearbyPlaces: [], // Initialize the nearbyPlaces list
     );
   }
   Map<String, dynamic> toJson() => {
@@ -112,7 +85,9 @@ class Hotel {
         "profilePicture": profilePicture,
         "images": List<String>.from(images.map((x) => x)),
         "amenities": List<String>.from(amenities.map((x) => x)),
-        "policies": policies, // "categories": categories.toString(),
+        "policies": policies,
+        "nearbyPlaces": List<dynamic>.from(nearbyPlaces.map((x) => x.toJson())),
+        // "categories": categories.toString(),
         // "likeDislike": likeDislike,
       };
 }
@@ -137,14 +112,3 @@ enum Reception { Manned, Unmanned }
 
 final receptionValues =
     EnumValues({"manned": Reception.Manned, "unmanned": Reception.Unmanned});
-
-class HotelIcons {
-  String get redHeartIcon => getRedHeartSVGPath();
-  String get starRateIcon => getStarRateSVGPath();
-  String get arrowIcon => getArrowSVGPath();
-  String get blueHeartIcon => getBlueHeartSVGPath();
-  String get coffeeIcon => getCoffeeSVGPath();
-  String get locationIcon => getLocationSVGPath();
-  String get moreIcon => getMoreSVGPath();
-  String get wifiIcon => getWifiSVGPath();
-}

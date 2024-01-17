@@ -65,39 +65,43 @@ class HotelPoliciesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text(
-          'Policies:',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10, bottom: 5),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Policies:',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
-        const SizedBox(height: 8),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Text('Check-in: ${policies.checkIn}'),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Text('Check-out: ${policies.checkOut}'),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Text('Accommodation Type: ${policies.accommodationType}'),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Text('Pet Policy: ${policies.petPolicy}'),
-            ),
-          ],
-        ),
-      ],
+          const SizedBox(height: 8),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4),
+                child: Text('Check-in: ${policies.checkIn}'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4),
+                child: Text('Check-out: ${policies.checkOut}'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4),
+                child:
+                    Text('Accommodation Type: ${policies.accommodationType}'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4),
+                child: Text('Pet Policy: ${policies.petPolicy}'),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

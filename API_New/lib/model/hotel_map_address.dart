@@ -15,18 +15,19 @@ class HotelMapLocation extends StatelessWidget {
     // Assuming you have a LatLng for the hotel location, replace LatLng(0, 0) with the actual coordinates.
     LatLng hotelLatLng = LatLng(hotel.lat, hotel.lng);
     return Padding(
-      padding: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(top: 10, bottom: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   '$name Hotel location',
-                  style: const TextStyle(fontSize: 14),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.left,
                 ),
               ],

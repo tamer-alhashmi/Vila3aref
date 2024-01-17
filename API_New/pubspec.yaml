@@ -49,6 +49,7 @@ dependencies:
   google_fonts: ^6.1.0
   js: ^0.6.3
   google_maps_flutter: ^2.5.2
+  location: ^5.0.3
 
 #  flutter_float_window: ^0.2.2
 

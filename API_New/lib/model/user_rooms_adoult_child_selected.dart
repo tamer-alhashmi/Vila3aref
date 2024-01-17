@@ -1,4 +1,5 @@
 import 'package:api_new/model/hotel.dart';
+import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class RoomsAndGuestsSelector extends StatefulWidget {
@@ -45,18 +46,27 @@ class _RoomsAndGuestsSelectorState extends State<RoomsAndGuestsSelector> {
                   'Rooms and guests',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Text('$userRoomSelected rooms'),
+                Text(
+                  '$userRoomSelected rooms',
+                  style: TextStyle(color: AppTheme.lightPrimaryColor),
+                ),
                 const SizedBox(width: 8),
-                Text('$userAdultSelected adults'),
+                Text(
+                  '$userAdultSelected adults',
+                  style: TextStyle(color: AppTheme.lightPrimaryColor),
+                ),
                 const SizedBox(width: 8),
-                Text('$userChildrenSelected children'),
+                Text(
+                  '$userChildrenSelected children',
+                  style: TextStyle(color: AppTheme.lightPrimaryColor),
+                ),
               ],
             ),
           ],
