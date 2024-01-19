@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -49,7 +49,7 @@ dependencies:
   google_fonts: ^6.1.0
   js: ^0.6.3
   google_maps_flutter: ^2.5.2
-  location: ^5.0.3
+#  location: ^5.0.3
 
 #  flutter_float_window: ^0.2.2
 
