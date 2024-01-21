@@ -45,7 +45,8 @@ class HotelMapLocation extends StatelessWidget {
                   markerId: const MarkerId('hotelMarker'),
                   position: hotelLatLng,
                   infoWindow: InfoWindow(
-                    title: '$city - $location',
+                    title: '$name Hotel',
+                    snippet: '$city - $location',
                   ),
                 ),
               },
@@ -57,36 +58,3 @@ class HotelMapLocation extends StatelessWidget {
     );
   }
 }
-
-// import 'package:flutter/cupertino.dart';
-// import 'hotel.dart';
-//
-//
-// class HotelMap  extends StatelessWidget {
-//
-//
-//
-//   const HotelMap ({super.key, required this.hotel});
-//   final Hotel hotel;
-//   String get location => hotel.location;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     String location = hotel.location;
-//     String city = hotel.city;
-//     return  Expanded(
-//        child: Column(
-//         children: [
-//           const Text('Property location',
-//           style: TextStyle(
-//             fontSize: 16
-//           ),),
-//           //Map here
-//           Text(
-//            '$city - $location'
-//           )
-//         ],
-//       ),
-//     );
-//   }
-// }

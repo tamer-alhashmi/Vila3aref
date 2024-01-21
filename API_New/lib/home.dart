@@ -4,10 +4,12 @@ import 'package:api_new/model/hotel.dart';
 import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/model/icons.dart';
 import 'package:api_new/model/scrollup.dart';
+import 'package:api_new/services/all_hotels_map.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   final ScrollController scrollController = ScrollController();
@@ -26,12 +28,33 @@ class _HomeScreenState extends State<HomeScreen> {
   late List<Hotel> hotels = [];
 
   get scrollController => CustomFloatingActionButton;
-
+  Set<Marker> markers = {};
   // this override to call data
   @override
   void initState() {
     super.initState();
     fetchHotel();
+    fetchAndSetMarkers();
+  }
+
+  Future<void> fetchAndSetMarkers() async {
+    // Fetch hotels and their markers
+    final hotels = await HotelsApi.fetchHotel();
+    final newMarkers = hotels.map((hotel) {
+      return Marker(
+        markerId: MarkerId(hotel.id.toString()),
+        position: LatLng(hotel.lat, hotel.lng),
+        infoWindow: InfoWindow(title: hotel.name, snippet: hotel.address),
+        onTap: () {
+          // Handle tap on marker, you can show more details here
+          print('Marker tapped: ${hotel.name}');
+        },
+      );
+    }).toSet();
+
+    setState(() {
+      markers = newMarkers;
+    });
   }
 
   @override
@@ -88,17 +111,17 @@ class _HomeScreenState extends State<HomeScreen> {
       // ),
       bottomNavigationBar: const CustomBottomBar(
           bottomAppBar: BottomAppBar()), //bottom Navigation Bar
+
       body: Visibility(
         visible: true,
         replacement: const Center(
           child: CircularProgressIndicator(),
         ),
         child: Padding(
-          // Search area
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              // Search by location
+              // Search by Location
               TextField(
                 controller: _locationController,
                 decoration: const InputDecoration(
@@ -107,25 +130,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   border: OutlineInputBorder(),
                 ),
               ),
-              const SizedBox(height: 16.0),
               // Add some spacing between text fields
-              // Search by city
-              Container(
-                child: TextField(
-                  controller: _cityController,
-                  decoration: const InputDecoration(
-                    labelText: 'Search by city',
-                    prefixIcon: Icon(Icons.location_city),
-                    border: OutlineInputBorder(),
-                  ),
+              const SizedBox(height: 16.0),
+              // Search by City
+              TextField(
+                controller: _cityController,
+                decoration: const InputDecoration(
+                  labelText: 'Search by city',
+                  prefixIcon: Icon(Icons.location_city),
+                  border: OutlineInputBorder(),
                 ),
               ),
+              // Display the map with all hotel locations
+              // Flexible(child: HotelMap(markers: markers)), // Search by city
+              // hotels cards
               Expanded(
                 child: ListView.builder(
                     controller: scrollController,
                     itemCount: hotels.length,
                     itemBuilder: (context, index) {
-                      print('Building hotel item $index');
+                      // print('Building hotel item $index');
                       final hotel = hotels[index];
                       var name = hotel.name;
                       // final reception = hotel.reception;

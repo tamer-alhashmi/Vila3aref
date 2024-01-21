@@ -5,7 +5,6 @@ import 'package:api_new/model/date_selection_widget.dart';
 import 'package:api_new/model/scrollup.dart';
 import 'package:api_new/model/user_rooms_adoult_child_selected.dart';
 import 'package:api_new/services/hotels_apis.dart';
-import 'package:api_new/services/nearby_places.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
@@ -124,12 +123,13 @@ class _HotelDetailState extends State<HotelDetail> {
         )),
       ),
       bottomNavigationBar: const CustomBottomBar(bottomAppBar: BottomAppBar()),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
-          controller: scrollController,
+      body: SingleChildScrollView(
+        controller: scrollController,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 8.0, right: 8.0),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            //Slider
             Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -149,11 +149,13 @@ class _HotelDetailState extends State<HotelDetail> {
                 // const SizedBox(width: 8),
                 ReviewsBox(hotel: widget.hotel),
               ], // Name & Star
-            ), //Slider
+            ),
+            //Slider & Dots...
             Column(
               children: [
                 SizedBox(
-                  height: 200,
+                  height: 210,
+                  width: double.infinity,
                   child: Stack(
                     children: <Widget>[
                       PageView.builder(
@@ -205,7 +207,8 @@ class _HotelDetailState extends State<HotelDetail> {
                   ),
                 ) // Dots
               ],
-            ), //Slider & Dots...
+            ),
+            //  Economic Discount
             Column(
               children: [
                 Padding(
@@ -286,7 +289,7 @@ class _HotelDetailState extends State<HotelDetail> {
                   ],
                 )
               ],
-            ), //  Economic Discount
+            ),
             DateSelectionWidget(
               hotel: widget.hotel,
               onDatesSelected: (checkInDate, checkOutDate, nights) {
