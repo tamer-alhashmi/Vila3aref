@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:api_new/services/hotels_apis.dart';
 import 'package:http/http.dart' as http;
 
 Future<void> getNearbyPlaces(double latitude, double longitude) async {

@@ -3,7 +3,6 @@ import 'dart:core';
 // import 'package:api_new/model/hotel_likeDislike.dart';
 import 'package:api_new/model/hotel_categories.dart';
 import 'package:api_new/model/hotel_policies.dart';
-import 'package:api_new/model/icons.dart';
 import 'package:api_new/services/nearby_places.dart';
 
 class Hotel {

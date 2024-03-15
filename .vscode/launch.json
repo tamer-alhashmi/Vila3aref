@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "API_New",
+            "cwd": "API_New",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "API_New (profile mode)",
+            "cwd": "API_New",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "API_New (release mode)",
+            "cwd": "API_New",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "js-0.6.3",
+            "cwd": "API_New\\lib\\model\\js-0.6.3",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}

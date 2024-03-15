@@ -1,4 +1,3 @@
-import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/services/nearby_places.dart';
 import 'package:flutter/material.dart';
 import 'package:api_new/model/hotel.dart';

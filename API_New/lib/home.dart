@@ -4,7 +4,6 @@ import 'package:api_new/model/hotel.dart';
 import 'package:api_new/model/hotel_detail.dart';
 import 'package:api_new/model/icons.dart';
 import 'package:api_new/model/scrollup.dart';
-import 'package:api_new/services/all_hotels_map.dart';
 import 'package:api_new/services/hotels_apis.dart';
 import 'package:api_new/theme/app_theme.dart';
 import 'package:flutter/material.dart';
